@@ -17,18 +17,18 @@ knitr::opts_chunk$set(
 
 ![](ghibli.jpg)
 
-Sprinkle some Studio Ghibli over your R plots and palettes.
+◕ ◡ ◕ Sprinkle some Studio Ghibli palettes over your R plots ◕ ◡ ◕
 
 ## Installation
 
-Get the development version from GitHub now. 
+Get the development version from GitHub right now. 
 
 ```{r, eval = FALSE}
-# If you haven't installed devtools yet, do so
-install.packages("devtools")
+# If you haven't installed remotes yet, do so
+install.packages("remotes")
 
 # install package from github
-devtools::install_github("ewenme/ghibli")
+remotes::install_github("ewenme/ghibli")
 ```
 
 ## Palettes
@@ -62,7 +62,7 @@ ghibli_palette("MononokeMedium")
 ![](http://cinema.pfpca.org/sites/cinema/files/films/Marnie_A.jpg)
 
 ```{r}
-ghibli_palette("MarnieMedium2")
+ghibli_palette("MarnieMedium1")
 ```
 
 ### Ponyo
@@ -79,12 +79,19 @@ ghibli_palette("PonyoMedium")
 library("ggplot2")
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   geom_point(size = 3) +
-  scale_color_manual(values = ghibli_palette("MononokeMedium")) +
+  scale_color_manual(values = rev(ghibli_palette("MononokeMedium"))) +
   theme_gray()
 ```
 
 ```{r, ggplot2, fig.height = 3}
 qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) +
-  scale_fill_manual(values = ghibli_palette("PonyoMedium"))
+  scale_fill_manual(values = ghibli_palette("MononokeMedium"))
 ```
+
+## Credits
+
+This package was inspired by (and lots of code ported from) [Karthik Ram's `wesanderson` package](https://github.com/karthik/wesanderson). 
+
+The palettes come from Love magazine's [STUDIO GHIBLI FOREVER](http://www.thelovemagazine.co.uk/posts/6584/in-photos-guess-who-s-back-retrospective-of-studio-ghibli-forever-is-here) retrospective. Go check it.
+
 
