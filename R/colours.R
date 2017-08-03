@@ -1,48 +1,41 @@
 #' Complete list of palettes
 #'
-#' Use \code{\link{wes_palette}} to construct palettes of desired length.
+#' Use \code{\link{ghibli_palette}} to construct palettes of desired length.
 #'
 #' @export
 ghibli_palettes <- list(
-  MarnieLight1 = c("#A42820", "#5F5647", "#9B110E", "#3F5151", "#4E2A1E", "#550307", "#0C1707"),
-  MarnieMedium1 = c("#FAD510", "#CB2314", "#273046", "#354823", "#1E1E1E"),
-  MarnieDark1 = c("#E1BD6D", "#EABE94", "#0B775E", "#35274A" ,"#F2300F"),
-  MarnieLight2 = c("#A42820", "#5F5647", "#9B110E", "#3F5151", "#4E2A1E", "#550307", "#0C1707"),
-  MarnieMedium2 = c("#FAD510", "#CB2314", "#273046", "#354823", "#1E1E1E"),
-  MarnieDark2 = c("#E1BD6D", "#EABE94", "#0B775E", "#35274A" ,"#F2300F"),
-  PonyoLight = c("#899DA4", "#C93312", "#FAEFD1", "#DC863B"),
-  PonyoMedium = c("#9A8822", "#F5CDB4", "#F8AFA8", "#FDDDA0", "#74A089"),
-  PonyoDark = c("#3B9AB2", "#78B7C5", "#EBCC2A", "#E1AF00", "#F21A00"),
-  LaputaLight = c("#FF0000", "#00A08A", "#F2AD00", "#F98400", "#5BBCD6"),
-  LaputaMedium = c("#ECCBAE", "#046C9A", "#D69C4E", "#ABDDDE", "#000000"),
-  LaputaDark = c("#446455", "#FDD262", "#D3DDDC", "#C7B19C"),
-  MononokeLight = c("#DD8D29", "#E2D200", "#46ACC8", "#E58601", "#B40F20"),
-  MononokeMedium = c("#F3DF6C", "#CEAB07", "#D5D5D3", "#24281A"),
-  MononokeDark = c("#798E87", "#C27D38", "#CCC591", "#29211F"),
-  SpiritedLight = c("#85D4E3", "#F4B5BD", "#9C964A", "#CDC08C", "#FAD77B"),
-  SpiritedMedium = c("#D8B70A", "#02401B", "#A2A475", "#81A88D", "#972D15"),
-  SpiritedDark = c("#F1BB7B", "#FD6467", "#5B1A18", "#D67236"),
-  YesterdayLight = c("#E6A0C4", "#C6CDF7", "#D8A499", "#7294D4"),
-  YesterdayMedium = c("#E6A0C4", "#C6CDF7", "#D8A499", "#7294D4"),
-  YesterdayDark = c("#E6A0C4", "#C6CDF7", "#D8A499", "#7294D4")
-
+  MarnieLight1 = c("#95918E", "#2B2522", "#7BC7C8", "#8BBBD0", "#E4D0C4", "#B0DDEA", "#F4E8CF"),
+  MarnieMedium1 = c("#7BA46C", "#602D31", "#008D91", "#0A789F", "#C6A28A", "#61B8D3", "#EACF9E"),
+  MarnieDark1 = c("#15110F", "#301619", "#004849", "#083C50" ,"#645145", "#305E6A", "#72694E"),
+  MarnieLight2 = c("#8E938D", "#93A39C", "#95B8AF", "#9FD1BE", "#BFCDBD", "#A9D1A7", "#E6E496"),
+  MarnieMedium2 = c("#1C271D", "#254639", "#257161", "#3AA580", "#7F9A7C", "#52A356", "#CEC747"),
+  MarnieDark2 = c("#0E130E", "#13231D", "#143830", "#1E513F" ,"#404D3E", "#29522A", "#666421"),
+  PonyoLight = c("#A6A0A0", "#ADB7BF", "#91C5CB", "#F7ACB3", "#F0BBB2", "#EDD7A4", "#F6E2D5"),
+  PonyoMedium = c("#4D4140", "#596F7E", "#168B98", "#ED5B67", "#E27766", "#DAAD50", "#EAC3A6"),
+  PonyoDark = c("#272020", "#2D3840", "#0E464C", "#762D34", "#703C33", "#6D5826", "#766255"),
+  LaputaLight = c("#898D90", "#8D939F", "#9F99B2", "#AFACC6", "#D8CADC", "#D9EDF2", "#F8E9C2"),
+  LaputaMedium = c("#13191F", "#1F2945", "#413566", "#5D5A8E", "#AF93BA", "#B2DAE4", "#F1D687"),
+  LaputaDark = c("#080D0F", "#0D1320", "#201A34", "#302D47", "#584B5D", "#596D72", "#786A43"),
+  MononokeLight = c("#838A8F", "#BB958B", "#9EA7BC", "#B2B8B1", "#EAA69D", "#F4C59D", "#F5EDCD"),
+  MononokeMedium = c("#05141E", "#762B19", "#3D507A", "#657062", "#D14E3E", "#E78A40", "#EBD799"),
+  MononokeDark = c("#020A0F", "#3C150C", "#1F283D", "#333832", "#69261E", "#74461F", "#756D4D"),
+  SpiritedLight = c("#8F9296", "#9A9C97", "#C29A9B", "#C7C0C7", "#B1DDF3", "#E1D7CC", "#DAEBF7"),
+  SpiritedMedium = c("#1F272E", "#353832", "#853438", "#908091", "#61BAE5", "#C4AE99", "#B5D9F0"),
+  SpiritedDark = c("#0F1216", "#1A1C17", "#431A1C", "#484148", "#325D73", "#62574D", "#5A6B77"),
+  YesterdayLight = c("#758184", "#7D8C96", "#87988E", "#9CAFC1", "#AFD5BD", "#EDE096", "#C1DAE8"),
+  YesterdayMedium = c("#041A21", "#102F40", "#244331", "#4B6E90", "#6AB287", "#DDC850", "#8FBBD6"),
+  YesterdayDark = c("#020E11", "#0A1923", "#14251B", "#293D4F", "#3C624B", "#796E2B", "#4F6875")
 )
 
-#' A Wes Anderson palette generator
+#' A Studio Ghibli palette generator
 #'
-#' These are a handful of color palettes from Wes Anderson movies.
+#' These are some color palettes from Studio Ghibli films.
 #'
-#' @param n Number of colors desired. Unfortunately most palettes now only
-#'   have 4 or 5 colors. But hopefully we'll add more palettes soon. All color
-#'   schemes are derived from the most excellent Tumblr blog:
-#'   \href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson Palettes}.
+#' @param n Number of colors desired. All palettes now only have seven colors.
+#'   All color schemes are derived from this Studio Ghibli retrospective:
+#'   \href{http://www.thelovemagazine.co.uk/posts/6584/in-photos-guess-who-s-back-retrospective-of-studio-ghibli-forever-is-here}{Studio Ghibli retrospective}.
 #'   If omitted, uses all colours.
-#' @param name Name of desired palette. Choices are:
-#'   \code{BottleRocket1}, \code{BottleRocket2},  \code{Rushmore1},
-#'   \code{Royal1}, \code{Royal2},  \code{Zissou1}, \code{Darjeeling1},
-#'   \code{Darjeeling2},  \code{Chevalier1} , \code{FantasticFox1} ,
-#'   \code{Moonrise1}, \code{Moonrise2}, \code{Moonrise3}, \code{Cavalcanti1},
-#'   \code{GrandBudapest1}, \code{GrandBudapest2}
+#' @param name Name of desired palette.
 #' @param type Either "continuous" or "discrete". Use continuous if you want
 #'   to automatically interpolate between colours.
 #'   @importFrom graphics rgb rect par image text
@@ -50,20 +43,19 @@ ghibli_palettes <- list(
 #' @export
 #' @keywords colors
 #' @examples
-#' wes_palette("Royal1")
-#' wes_palette("GrandBudapest1")
-#' wes_palette("Cavalcanti1")
-#' wes_palette("Cavalcanti1", 3)
+#' ghibli_palette("PonyoLight")
+#' ghibli_palette("LaputaMedium")
+#' ghibli_palette("SpiritedDark")
+#' ghibli_palette("MarnieMedium2", 3)
 #'
 #' # If you need more colours than normally found in a palette, you
 #' # can use a continuous palette to interpolate between existing
 #' # colours
-#' pal <- wes_palette(21, name = "Zissou1", type = "continuous")
-#' image(volcano, col = pal)
-wes_palette <- function(name, n, type = c("discrete", "continuous")) {
+#' pal <- ghibli_palette(21, name = "YesterdayLight", type = "continuous")
+ghibli_palette <- function(name, n, type = c("discrete", "continuous")) {
   type <- match.arg(type)
 
-  pal <- wes_palettes[[name]]
+  pal <- ghibli_palettes[[name]]
   if (is.null(pal))
     stop("Palette not found.")
 
