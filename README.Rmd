@@ -1,0 +1,90 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "figure/",
+  fig.height = 1
+)
+```
+
+# ghibli 
+
+[![Build Status](https://travis-ci.org/ewenme/ghibli.png)](https://travis-ci.org/ewenme/ghibli) 
+
+![](ghibli.jpg)
+
+Sprinkle some Studio Ghibli over your R plots and palettes.
+
+## Installation
+
+Get the development version from GitHub now. 
+
+```{r, eval = FALSE}
+# If you haven't installed devtools yet, do so
+install.packages("devtools")
+
+# install package from github
+devtools::install_github("ewenme/ghibli")
+```
+
+## Palettes
+
+```{r}
+# load package
+library(ghibli)
+
+# see palette names
+names(ghibli_palettes)
+```
+
+### Spirited Away 
+
+![](https://vice-images.vice.com/images/content-images-crops/2016/07/19/spirited-away-ghibli-miyazaki-15th-15-year-anniversary-best-animation-hannah-ewens-body-image-1468945005-size_1000.jpg?output-quality=75.jpg)
+
+```{r}
+ghibli_palette("SpiritedMedium")
+```
+
+### Princess Mononoke
+
+![](http://www.animationmagazine.net/wordpress/wp-content/uploads/Princess-Mononoke-post2.jpg)
+
+```{r}
+ghibli_palette("MononokeMedium")
+```
+
+### When Marnie Was There
+
+![](http://cinema.pfpca.org/sites/cinema/files/films/Marnie_A.jpg)
+
+```{r}
+ghibli_palette("MarnieMedium2")
+```
+
+### Ponyo
+
+![](https://entropymag.org/wp-content/uploads/2015/10/Ponyo-screencaps-ponyo-on-the-cliff-by-the-sea-30547658-1920-1080.png)
+
+```{r}
+ghibli_palette("PonyoMedium")
+```
+
+## Usage
+
+```{r, ggplot, fig.height = 3}
+library("ggplot2")
+ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
+  geom_point(size = 3) +
+  scale_color_manual(values = ghibli_palette("MononokeMedium")) +
+  theme_gray()
+```
+
+```{r, ggplot2, fig.height = 3}
+qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) +
+  scale_fill_manual(values = ghibli_palette("PonyoMedium"))
+```
+
