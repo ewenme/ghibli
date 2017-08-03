@@ -3,10 +3,11 @@ ghibli
 ======
 
 [![Build Status](https://travis-ci.org/ewenme/ghibli.png)](https://travis-ci.org/ewenme/ghibli)
+[![Made with](https://img.shields.io/badge/made%20with-love-ff69b4.svg)]()
 
 ![](ghibli.jpg)
 
-◕ ◡ ◕ Sprinkle some Studio Ghibli palettes over your R plots ◕ ◡ ◕
+> ｡◕‿‿◕｡ Sprinkle some Studio Ghibli palette magic over your R plots ｡◕‿‿◕｡
 
 Installation
 ------------
@@ -28,16 +29,12 @@ Palettes
 # load package
 library(ghibli)
 
-# see palette names
-names(ghibli_palettes)
-#>  [1] "MarnieLight1"    "MarnieMedium1"   "MarnieDark1"    
-#>  [4] "MarnieLight2"    "MarnieMedium2"   "MarnieDark2"    
-#>  [7] "PonyoLight"      "PonyoMedium"     "PonyoDark"      
-#> [10] "LaputaLight"     "LaputaMedium"    "LaputaDark"     
-#> [13] "MononokeLight"   "MononokeMedium"  "MononokeDark"   
-#> [16] "SpiritedLight"   "SpiritedMedium"  "SpiritedDark"   
-#> [19] "YesterdayLight"  "YesterdayMedium" "YesterdayDark"
+# see palette names and colours
+par(mfrow=c(7,3))
+for(i in names(ghibli_palettes)) print(ghibli_palette(i))
 ```
+
+![](figure/palettes-1.png)
 
 ### Spirited Away
 
@@ -47,7 +44,7 @@ names(ghibli_palettes)
 ghibli_palette("SpiritedMedium")
 ```
 
-![](figure/unnamed-chunk-4-1.png)
+![](figure/unnamed-chunk-3-1.png)
 
 ### Princess Mononoke
 
@@ -57,7 +54,7 @@ ghibli_palette("SpiritedMedium")
 ghibli_palette("MononokeMedium")
 ```
 
-![](figure/unnamed-chunk-5-1.png)
+![](figure/unnamed-chunk-4-1.png)
 
 ### When Marnie Was There
 
@@ -67,7 +64,7 @@ ghibli_palette("MononokeMedium")
 ghibli_palette("MarnieMedium1")
 ```
 
-![](figure/unnamed-chunk-6-1.png)
+![](figure/unnamed-chunk-5-1.png)
 
 ### Ponyo
 
@@ -77,7 +74,7 @@ ghibli_palette("MarnieMedium1")
 ghibli_palette("PonyoMedium")
 ```
 
-![](figure/unnamed-chunk-7-1.png)
+![](figure/unnamed-chunk-6-1.png)
 
 Usage
 -----

@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 
 ![](ghibli.jpg)
 
-◕ ◡ ◕ Sprinkle some Studio Ghibli palettes over your R plots ◕ ◡ ◕
+> ｡◕‿‿◕｡  Sprinkle some Studio Ghibli palette magic over your R plots  ｡◕‿‿◕｡
 
 ## Installation
 
@@ -33,12 +33,13 @@ remotes::install_github("ewenme/ghibli")
 
 ## Palettes
 
-```{r}
+```{r palettes, fig.height = 5}
 # load package
 library(ghibli)
 
-# see palette names
-names(ghibli_palettes)
+# see palette names and colours
+par(mfrow=c(7,3))
+for(i in names(ghibli_palettes)) print(ghibli_palette(i))
 ```
 
 ### Spirited Away 
