@@ -81,17 +81,24 @@ Usage
 
 ``` r
 library("ggplot2")
+
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   geom_point(size = 3) +
-  scale_color_manual(values = rev(ghibli_palette("MononokeMedium"))) +
-  theme_gray()
+  scale_color_manual(values = rev(ghibli_palette("MarnieMedium1"))) +
+  theme_grey()
 ```
 
 ![](figure/ggplot-1.png)
 
 ``` r
-qplot(factor(cyl), data=mtcars, geom="bar", fill=factor(vs)) +
-  scale_fill_manual(values = ghibli_palette("MononokeMedium"))
+
+ggplot(airquality, aes(x=Day, y=Month)) +
+  geom_tile(aes(fill=Temp)) +
+  scale_fill_gradientn(colours = ghibli_palette("MononokeMedium", 21, type = "continuous")) +
+  scale_x_discrete(expand = c(0, 0)) +
+  scale_y_discrete(expand = c(0, 0)) +
+  coord_equal() +
+  theme(legend.position = "top")
 ```
 
 ![](figure/ggplot2-1.png)
