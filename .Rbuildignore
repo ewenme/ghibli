@@ -4,3 +4,6 @@
 ^\.Rproj\.user$
 ^\.travis\.yml$
 ^NEWS\.md$
+^ghibli\.jpg$
+^README\.md$
+^README\.Rmd$
