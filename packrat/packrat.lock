@@ -37,10 +37,26 @@ Source: CRAN
 Version: 1.1.0
 Hash: 3f754426ca2b7dbbf63951fe5075373b
 
+Package: base64enc
+Source: CRAN
+Version: 0.1-3
+Hash: c590d29e555926af053055e23ee79efb
+
+Package: bitops
+Source: CRAN
+Version: 1.0-6
+Hash: 67d0775189fd0041d95abca618c5c07e
+
 Package: brew
 Source: CRAN
 Version: 1.0-6
 Hash: 931f9972deae0f205e1c78a51f33149b
+
+Package: caTools
+Source: CRAN
+Version: 1.17.1
+Hash: 97cb6f6293cd18d17df77a6383cc6763
+Requires: bitops
 
 Package: colorspace
 Source: CRAN
@@ -85,6 +101,12 @@ Source: CRAN
 Version: 0.6.12
 Hash: e53fb8c58673df868183697e39a6a4d6
 
+Package: evaluate
+Source: CRAN
+Version: 0.10.1
+Hash: 54d95f4ec6d0300100413ed0127d89ae
+Requires: stringr
+
 Package: ggplot2
 Source: CRAN
 Version: 2.2.1
@@ -101,16 +123,39 @@ Source: CRAN
 Version: 0.2.0
 Hash: cd78381a9d3fea966ac39bd0daaf5554
 
+Package: highr
+Source: CRAN
+Version: 0.6
+Hash: aa3d5b7912b5fed4b546ed5cd2a1760b
+
+Package: htmltools
+Source: CRAN
+Version: 0.3.6
+Hash: 5b070a04ef8df1953544873db1c5896e
+Requires: Rcpp, digest
+
 Package: httr
 Source: CRAN
 Version: 1.2.1
 Hash: 7de1f8f760441881804af7c1ff324340
 Requires: R6, curl, jsonlite, mime, openssl
 
+Package: hunspell
+Source: CRAN
+Version: 2.6
+Hash: a4df84575f12d779a024de4ac198c690
+Requires: Rcpp, digest
+
 Package: jsonlite
 Source: CRAN
 Version: 1.5
 Hash: 9c51936d8dd00b2f1d4fe9d10499694c
+
+Package: knitr
+Source: CRAN
+Version: 1.17
+Hash: f6b2bf543ee3e25f5b92bb46f9958c5f
+Requires: digest, evaluate, highr, markdown, stringr, yaml
 
 Package: labeling
 Source: CRAN
@@ -126,6 +171,12 @@ Package: magrittr
 Source: CRAN
 Version: 1.5
 Hash: bdc4d48c3135e8f3b399536ddf160df4
+
+Package: markdown
+Source: CRAN
+Version: 0.8
+Hash: 045d7c594d503b41f1c28946d076c8aa
+Requires: mime
 
 Package: memoise
 Source: CRAN
@@ -171,6 +222,13 @@ Source: CRAN
 Version: 0.1.1
 Hash: 86c53487ce7f82f0a7cc11c816060910
 
+Package: rmarkdown
+Source: CRAN
+Version: 1.6
+Hash: 40f4034a7b8e28edc2b384bdb0c4d537
+Requires: base64enc, caTools, evaluate, htmltools, jsonlite, knitr,
+    rprojroot, stringr, yaml
+
 Package: roxygen2
 Source: CRAN
 Version: 6.0.1
@@ -188,6 +246,12 @@ Package: rstudioapi
 Source: CRAN
 Version: 0.6
 Hash: fd256f8bfb9a64cc35f98b0decb1a79f
+
+Package: rversions
+Source: CRAN
+Version: 1.0.3
+Hash: 44837671df6bf1d0b863dc6f83f42a16
+Requires: curl, xml2
 
 Package: scales
 Source: CRAN
@@ -227,3 +291,8 @@ Source: CRAN
 Version: 1.1.1
 Hash: b326a762ddb04eef605cc88987fa71fb
 Requires: BH, Rcpp
+
+Package: yaml
+Source: CRAN
+Version: 2.1.14
+Hash: c81230c3a7d9ba20607ad6b4331173d1
