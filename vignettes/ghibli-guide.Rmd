@@ -45,7 +45,7 @@ Incorporate ghibli palettes into [ggplot2](http://ggplot2.tidyverse.org/index.ht
 
 ```{r, ggplot 1}
 
-library("ggplot2")
+library(ggplot2)
 
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   geom_point(size = 3) +
