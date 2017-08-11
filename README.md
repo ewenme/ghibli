@@ -2,12 +2,14 @@
 ghibli
 ======
 
-[![Build Status](https://travis-ci.org/ewenme/ghibli.png)](https://travis-ci.org/ewenme/ghibli)
 [![Made with](https://img.shields.io/badge/made%20with-love-ff69b4.svg)]()
+[![Build Status](https://travis-ci.org/ewenme/ghibli.png)](https://travis-ci.org/ewenme/ghibli)
 
 ![](ghibli.jpg)
 
-> ｡◕‿‿◕｡ Sprinkle some Studio Ghibli palette magic over your R plots ｡◕‿‿◕｡
+> “No matter how many weapons you have, no matter how great your technology might be, the world cannot live without love!” —*Castle in the Sky (1986)*
+
+｡◕‿‿◕｡ Sprinkle some Studio Ghibli palette magic over your R plots ｡◕‿‿◕｡
 
 Installation
 ------------

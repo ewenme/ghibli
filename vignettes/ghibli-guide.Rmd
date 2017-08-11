@@ -66,4 +66,6 @@ ggplot(airquality, aes(x=Day, y=Month)) +
   theme(legend.position = "top")
 ```
 
+<br>
+
 Over to you ╯°□°）╯
