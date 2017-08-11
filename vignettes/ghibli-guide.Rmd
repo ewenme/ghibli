@@ -1,0 +1,69 @@
+---
+title: "A ghibli guide"
+author: "Ewen Henderson"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, echo = FALSE, message = FALSE}
+require(ghibli)
+
+knitr::opts_chunk$set(
+  comment = "#",
+    error = FALSE,
+     tidy = FALSE,
+    cache = FALSE,
+ collapse = TRUE,
+ fig.width = 5)
+```
+
+｡◕‿‿◕｡ Welcome to the world of ghibli. Palettes for the young at heart  ｡◕‿‿◕｡
+
+## Palettes
+
+You can see the list of available palettes with `ghibli_palettes()`:
+
+```{r palettes}
+
+# see palette names and colours
+par(mfrow=c(7,3))
+for(i in names(ghibli_palettes)) print(ghibli_palette(i))
+
+```
+
+Any palette names that got your attention? You will reference the palette name whenever you want to use it. The next section will show you how.
+
+## Action
+
+Incorporate ghibli palettes into [ggplot2](http://ggplot2.tidyverse.org/index.html) plots:
+
+### Marnie
+
+```{r, ggplot 1}
+
+library("ggplot2")
+
+ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
+  geom_point(size = 3) +
+  scale_color_manual(values = rev(ghibli_palette("MarnieMedium1"))) +
+  theme_grey()
+```
+
+### Mononoke
+
+```{r, ggplot 2}
+
+ggplot(airquality, aes(x=Day, y=Month)) +
+  geom_tile(aes(fill=Temp)) +
+  scale_fill_gradientn(colours = ghibli_palette("MononokeMedium", 21, type = "continuous")) +
+  scale_x_discrete(expand = c(0, 0)) +
+  scale_y_discrete(expand = c(0, 0)) +
+  coord_equal() +
+  theme(legend.position = "top")
+```
+
+Over to you ╯°□°）╯
