@@ -4,7 +4,7 @@ Description: Colour palettes inspired by Studio Ghibli films, for responsible us
 Authors@R: person("Ewen", "Henderson", email = "ewenhenderson@gmail.com", role = c("aut", "cre"))
 Version: 0.1.0
 Depends: R (>= 3.4.0)
-Maintainer: <ewenhenderson@gmail.com>
+Maintainer: person("Ewen", "Henderson", email = "ewenhenderson@gmail.com", role = c("aut", "cre"))
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
