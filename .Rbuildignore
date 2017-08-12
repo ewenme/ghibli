@@ -7,5 +7,5 @@
 ^ghibli\.jpg$
 ^README\.md$
 ^README\.Rmd$
-figure/$
+figure/
 ^cran-comments\.md$
