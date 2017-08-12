@@ -9,3 +9,4 @@
 ^README\.Rmd$
 figure/
 ^cran-comments\.md$
+^figure$
