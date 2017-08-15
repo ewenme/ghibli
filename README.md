@@ -4,6 +4,8 @@ ghibli
 
 [![Made with](https://img.shields.io/badge/made%20with-love-ff69b4.svg)]()
 [![Build Status](https://travis-ci.org/ewenme/ghibli.png)](https://travis-ci.org/ewenme/ghibli)
+[![CRAN status](http://www.r-pkg.org/badges/version/ghibli)](http://www.r-pkg.org/badges/version/ghibli)
+[![DLs](http://cranlogs.r-pkg.org/badges/ghibli)](http://cran.rstudio.com/web/packages/ghibli/index.html)
 
 ![](ghibli.jpg)
 
@@ -14,7 +16,7 @@ ghibli
 Installation
 ------------
 
-Get the development version from GitHub right now.
+Get the development version from GitHub...
 
 ``` r
 # If you haven't installed remotes yet, do so
@@ -22,6 +24,11 @@ install.packages("remotes")
 
 # install package from github
 remotes::install_github("ewenme/ghibli")
+```
+...or get the CRAN edition.
+
+``` r
+install.packages("ghibli")
 ```
 
 Palettes
