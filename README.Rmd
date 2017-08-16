@@ -105,4 +105,10 @@ This package was inspired by (and lots of code ported from) [Karthik Ram's `wesa
 
 The palettes come from Love magazine's [STUDIO GHIBLI FOREVER](http://www.thelovemagazine.co.uk/posts/6584/in-photos-guess-who-s-back-retrospective-of-studio-ghibli-forever-is-here) retrospective. Go check it.
 
+Kiki and Totoro palettes from [Movies in Color](http://moviesincolor.com/).
+
+[Kiki's Delivery Service](http://moviesincolor.com/post/64877406577/hayao-miyazaki-week-kikis-delivery-service-1989)
+
+[My Neighbor Totoro](http://moviesincolor.com/post/64786383878/hayao-miyazaki-week-my-neighbor-totoro-1988)
+
 
