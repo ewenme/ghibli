@@ -4,7 +4,7 @@
 \name{ghibli_palettes}
 \alias{ghibli_palettes}
 \title{Complete list of palettes}
-\format{An object of class \code{list} of length 21.}
+\format{An object of class \code{list} of length 27.}
 \usage{
 ghibli_palettes
 }
