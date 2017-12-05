@@ -7,19 +7,8 @@ In Version 0.1.1 added new palettes and reduced the R version needed.
 
 ## R CMD check results
 
-0 errors | 0 warnings | 1 note
-
-* This is a new release.
+There were no ERROR, WARNING or NOTE.
 
 ## Reverse dependencies
 
-This is a new release, so there are no reverse dependencies.
-
----
-
-* I have run R CMD check on the NUMBER downstream dependencies.
-  (Summary at ...). 
-  
-* FAILURE SUMMARY
-
-* All revdep maintainers were notified of the release on RELEASE DATE.
+* I have run R CMD check on the 1 downstream dependencies. There were no ERROR, WARNING or NOTE.
