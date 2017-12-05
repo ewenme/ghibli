@@ -47,6 +47,16 @@ ghibli_palette("SpiritedMedium")
 
 ![](figure/unnamed-chunk-3-1.png)
 
+### My Neighbor Totoro
+
+![](http://78.media.tumblr.com/1d93af19859c5d79bd9ce518eedeeb91/tumblr_mv2zrkquSJ1s6aghro1_1280.jpg)
+
+``` r
+ghibli_palette("TotoroMedium")
+```
+
+![](figure/unnamed-chunk-4-1.png)
+
 ### Princess Mononoke
 
 ![](http://www.animationmagazine.net/wordpress/wp-content/uploads/Princess-Mononoke-post2.jpg)
@@ -55,7 +65,7 @@ ghibli_palette("SpiritedMedium")
 ghibli_palette("MononokeMedium")
 ```
 
-![](figure/unnamed-chunk-4-1.png)
+![](figure/unnamed-chunk-5-1.png)
 
 ### When Marnie Was There
 
@@ -65,7 +75,7 @@ ghibli_palette("MononokeMedium")
 ghibli_palette("MarnieMedium1")
 ```
 
-![](figure/unnamed-chunk-5-1.png)
+![](figure/unnamed-chunk-6-1.png)
 
 ### Ponyo
 
@@ -75,7 +85,7 @@ ghibli_palette("MarnieMedium1")
 ghibli_palette("PonyoMedium")
 ```
 
-![](figure/unnamed-chunk-6-1.png)
+![](figure/unnamed-chunk-7-1.png)
 
 Usage
 -----

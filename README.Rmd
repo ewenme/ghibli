@@ -53,9 +53,13 @@ for(i in names(ghibli_palettes)) print(ghibli_palette(i))
 ghibli_palette("SpiritedMedium")
 ```
 
-### My Neighbor Tortoro
+### My Neighbor Totoro
 
 ![](http://78.media.tumblr.com/1d93af19859c5d79bd9ce518eedeeb91/tumblr_mv2zrkquSJ1s6aghro1_1280.jpg)
+
+```{r}
+ghibli_palette("TotoroMedium")
+```
 
 ### Princess Mononoke
 
