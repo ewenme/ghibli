@@ -10,3 +10,4 @@
 figure/
 ^cran-comments\.md$
 ^figure$
+revdep/
