@@ -25,12 +25,12 @@ ghibli_palettes <- list(
   YesterdayLight = c("#758184", "#7D8C96", "#87988E", "#9CAFC1", "#AFD5BD", "#EDE096", "#C1DAE8"),
   YesterdayMedium = c("#041A21", "#102F40", "#244331", "#4B6E90", "#6AB287", "#DDC850", "#8FBBD6"),
   YesterdayDark = c("#020E11", "#0A1923", "#14251B", "#293D4F", "#3C624B", "#796E2B", "#4F6875"),
-  KikiLight = c("#8E8C8F", "#9A9AA2", "#D98594", "#86C2DA", "#D0C1AA", "#C0DDE1", "#E9DBD0"),
-  KikiMedium = c("#1C1A1F", "#333544", "#B50A2A", "#0E84B4", "#9E8356", "#7EBAC2", "#D1B79E"),
-  KikiDark = c("#0E0C0F", "#1A1A22", "#590514", "#06425A", "#50412A", "#405D61", "#695B50"),
+  KikiLight = c("#8E8C8F", "#9A9AA1", "#D98594", "#82C3D8", "#D1C1AC", "#BEDDE0", "#EADBD1"),
+  KikiMedium = c("#1C1A1F", "#333544", "#B9022C", "#0085B0", "#9F825C", "#7EBAC2", "#D2B7A1"),
+  KikiDark = c("#0E0C0F", "#1A1A22", "#5B0315", "#004358", "#51412D", "#3E5D60", "#6A5B51"),
   TotoroLight = c("#85898A", "#959492", "#AC9D96", "#A8A6A9", "#A1B1C8", "#D6C0A9", "#DCD3C4"),
-  TotoroMedium = c("#A01215", "#2D2A25", "#583B2B", "#534C53", "#446590", "#AD8152", "#BBA78C"),
-  TotoroDark = c("#05090A", "#151412", "#2C1D16", "#282629", "#213148", "#564029", "#5C5344")
+  TotoroMedium = c("#A01215", "#2D2A25", "#593B2D", "#534C53", "#42668D", "#AF8058", "#BCA78F"),
+  TotoroDark = c("#05090A", "#151412", "#2C1D16", "#282629", "#213148", "#57402C", "#5C5346")
 )
 
 #' A Studio Ghibli palette generator

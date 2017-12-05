@@ -2,10 +2,7 @@
 ghibli
 ======
 
-[![Made with](https://img.shields.io/badge/made%20with-love-ff69b4.svg)]()
 [![Build Status](https://travis-ci.org/ewenme/ghibli.png)](https://travis-ci.org/ewenme/ghibli)
-[![CRAN status](http://www.r-pkg.org/badges/version/ghibli)](http://www.r-pkg.org/badges/version/ghibli)
-[![DLs](http://cranlogs.r-pkg.org/badges/ghibli)](http://cran.rstudio.com/web/packages/ghibli/index.html)
 
 ![](ghibli.jpg)
 
@@ -16,7 +13,7 @@ ghibli
 Installation
 ------------
 
-Get the development version from GitHub...
+Get the development version from GitHub right now.
 
 ``` r
 # If you haven't installed remotes yet, do so
@@ -24,11 +21,6 @@ install.packages("remotes")
 
 # install package from github
 remotes::install_github("ewenme/ghibli")
-```
-...or get the CRAN edition.
-
-``` r
-install.packages("ghibli")
 ```
 
 Palettes
@@ -39,7 +31,7 @@ Palettes
 library(ghibli)
 
 # see palette names and colours
-par(mfrow=c(7,3))
+par(mfrow=c(9,3))
 for(i in names(ghibli_palettes)) print(ghibli_palette(i))
 ```
 
@@ -117,4 +109,4 @@ Credits
 
 This package was inspired by (and lots of code ported from) [Karthik Ram's `wesanderson` package](https://github.com/karthik/wesanderson).
 
-The palettes come from Love magazine's [STUDIO GHIBLI FOREVER](http://www.thelovemagazine.co.uk/posts/6584/in-photos-guess-who-s-back-retrospective-of-studio-ghibli-forever-is-here) retrospective. Go check it.
+The palettes mostly come from Love magazine's [STUDIO GHIBLI FOREVER](http://www.thelovemagazine.co.uk/posts/6584/in-photos-guess-who-s-back-retrospective-of-studio-ghibli-forever-is-here) retrospective. [Kiki's Delivery Service](http://moviesincolor.com/post/64877406577/hayao-miyazaki-week-kikis-delivery-service-1989) and [My Neighbor Totoro](http://moviesincolor.com/post/64786383878/hayao-miyazaki-week-my-neighbor-totoro-1988) palettes come from [Movies in Color](http://moviesincolor.com/). Go check 'em.

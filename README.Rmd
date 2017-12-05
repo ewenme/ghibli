@@ -41,7 +41,7 @@ remotes::install_github("ewenme/ghibli")
 library(ghibli)
 
 # see palette names and colours
-par(mfrow=c(7,3))
+par(mfrow=c(9,3))
 for(i in names(ghibli_palettes)) print(ghibli_palette(i))
 ```
 
@@ -52,6 +52,10 @@ for(i in names(ghibli_palettes)) print(ghibli_palette(i))
 ```{r}
 ghibli_palette("SpiritedMedium")
 ```
+
+### My Neighbor Tortoro
+
+![](http://78.media.tumblr.com/1d93af19859c5d79bd9ce518eedeeb91/tumblr_mv2zrkquSJ1s6aghro1_1280.jpg)
 
 ### Princess Mononoke
 
@@ -103,12 +107,4 @@ ggplot(airquality, aes(x=Day, y=Month)) +
 
 This package was inspired by (and lots of code ported from) [Karthik Ram's `wesanderson` package](https://github.com/karthik/wesanderson). 
 
-The palettes come from Love magazine's [STUDIO GHIBLI FOREVER](http://www.thelovemagazine.co.uk/posts/6584/in-photos-guess-who-s-back-retrospective-of-studio-ghibli-forever-is-here) retrospective. Go check it.
-
-Kiki and Totoro palettes from [Movies in Color](http://moviesincolor.com/).
-
-[Kiki's Delivery Service](http://moviesincolor.com/post/64877406577/hayao-miyazaki-week-kikis-delivery-service-1989)
-
-[My Neighbor Totoro](http://moviesincolor.com/post/64786383878/hayao-miyazaki-week-my-neighbor-totoro-1988)
-
-
+The palettes mostly come from Love magazine's [STUDIO GHIBLI FOREVER](http://www.thelovemagazine.co.uk/posts/6584/in-photos-guess-who-s-back-retrospective-of-studio-ghibli-forever-is-here) retrospective. [Kiki's Delivery Service](http://moviesincolor.com/post/64877406577/hayao-miyazaki-week-kikis-delivery-service-1989) and [My Neighbor Totoro](http://moviesincolor.com/post/64786383878/hayao-miyazaki-week-my-neighbor-totoro-1988) palettes come from [Movies in Color](http://moviesincolor.com/). Go check 'em.
