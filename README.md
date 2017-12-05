@@ -13,7 +13,13 @@ ghibli
 Installation
 ------------
 
-Get the development version from GitHub right now.
+Install the latest stable version on CRAN...
+
+``` r
+install.packages('ghibli')
+```
+
+...or get the development version from GitHub.
 
 ``` r
 # If you haven't installed remotes yet, do so
@@ -45,7 +51,7 @@ for(i in names(ghibli_palettes)) print(ghibli_palette(i))
 ghibli_palette("SpiritedMedium")
 ```
 
-![](figure/unnamed-chunk-3-1.png)
+![](figure/unnamed-chunk-4-1.png)
 
 ### My Neighbor Totoro
 
@@ -55,7 +61,7 @@ ghibli_palette("SpiritedMedium")
 ghibli_palette("TotoroMedium")
 ```
 
-![](figure/unnamed-chunk-4-1.png)
+![](figure/unnamed-chunk-5-1.png)
 
 ### Princess Mononoke
 
@@ -65,7 +71,7 @@ ghibli_palette("TotoroMedium")
 ghibli_palette("MononokeMedium")
 ```
 
-![](figure/unnamed-chunk-5-1.png)
+![](figure/unnamed-chunk-6-1.png)
 
 ### When Marnie Was There
 
@@ -75,7 +81,7 @@ ghibli_palette("MononokeMedium")
 ghibli_palette("MarnieMedium1")
 ```
 
-![](figure/unnamed-chunk-6-1.png)
+![](figure/unnamed-chunk-7-1.png)
 
 ### Ponyo
 
@@ -85,7 +91,7 @@ ghibli_palette("MarnieMedium1")
 ghibli_palette("PonyoMedium")
 ```
 
-![](figure/unnamed-chunk-7-1.png)
+![](figure/unnamed-chunk-8-1.png)
 
 Usage
 -----
