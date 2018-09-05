@@ -1,6 +1,11 @@
+Version 0.1.2
+=============
+* Fixed malformed documentation in `ghibli_palette`.
+* Removed a bad example plot from package vignette `ghibli-guide`.
+
 Version 0.1.1
 =============
-* New palettes (Kiki and Totoro)
+* New palettes (Kiki and Totoro).
 
 Version 0.1.0
 =============

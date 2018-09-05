@@ -2,12 +2,12 @@ Package: ghibli
 Title: Studio Ghibli Palette Generator
 Description: Colour palettes inspired by Studio Ghibli films, ported to R for your enjoyment.
 Authors@R: person("Ewen", "Henderson", email = "ewenhenderson@gmail.com", role = c("aut", "cre"))
-Version: 0.1.1.9000
+Version: 0.1.2
 Depends: R (>= 3.1)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: ggplot2 (>= 2.2.1)
 Suggests: knitr, rmarkdown
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
 VignetteBuilder: knitr

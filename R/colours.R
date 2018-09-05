@@ -44,7 +44,8 @@ ghibli_palettes <- list(
 #' @param name Name of desired palette.
 #' @param type Either "continuous" or "discrete". Use continuous if you want
 #'   to automatically interpolate between colours.
-#'   @importFrom graphics rgb rect par image text
+#' @importFrom graphics rect par image text
+#' @importFrom grDevices rgb
 #' @return A vector of colours.
 #' @export
 #' @keywords colors

@@ -1,10 +1,10 @@
 
-ghibli
-======
+ghibli <img alt="discogger Logo" title="ghibli" align="right" src="figure/ghibli-logo.png" width="100" style="float:right;width:100px;"/>
+=========================================================================================================================================
 
-[![Build Status](https://travis-ci.org/ewenme/ghibli.svg)](https://travis-ci.org/ewenme/ghibli) [![CRAN status](http://www.r-pkg.org/badges/version/ghibli)](http://www.r-pkg.org/badges/version/ghibli) [![DLs](http://cranlogs.r-pkg.org/badges/ghibli)](http://cran.rstudio.com/web/packages/ghibli/index.html)
+[![lifecycle](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://www.tidyverse.org/lifecycle/#stable) [![Build Status](https://travis-ci.org/ewenme/ghibli.svg)](https://travis-ci.org/ewenme/ghibli) [![CRAN status](http://www.r-pkg.org/badges/version/ghibli)](http://www.r-pkg.org/badges/version/ghibli) [![DLs](http://cranlogs.r-pkg.org/badges/ghibli)](http://cran.rstudio.com/web/packages/ghibli/index.html)
 
-![](ghibli.jpg)
+![](figure/ghibli.jpg)
 
 > “No matter how many weapons you have, no matter how great your technology might be, the world cannot live without love!” —*Castle in the Sky (1986)*
 
@@ -93,32 +93,21 @@ ghibli_palette("PonyoMedium")
 
 ![](figure/unnamed-chunk-8-1.png)
 
-Usage
------
+In the wild
+-----------
 
 ``` r
-library("ggplot2")
+library(ggplot2)
 
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
-  geom_point(size = 3) +
+  geom_jitter(size = 3) +
   scale_color_manual(values = rev(ghibli_palette("MarnieMedium1"))) +
-  theme_grey()
+  theme_minimal() +
+  labs(title="Marnie Medium (1) Palette Test",
+       subtitle="A plot that is only useful for demonstration purposes")
 ```
 
-![](figure/ggplot-1.png)
-
-``` r
-
-ggplot(airquality, aes(x=Day, y=Month)) +
-  geom_tile(aes(fill=Temp)) +
-  scale_fill_gradientn(colours = ghibli_palette("MononokeMedium", 21, type = "continuous")) +
-  scale_x_discrete(expand = c(0, 0)) +
-  scale_y_discrete(expand = c(0, 0)) +
-  coord_equal() +
-  theme(legend.position = "top")
-```
-
-![](figure/ggplot2-1.png)
+![](figure/ggplot2-eg-1.png)
 
 Credits
 -------

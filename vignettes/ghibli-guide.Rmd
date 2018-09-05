@@ -1,7 +1,5 @@
 ---
 title: "A ghibli guide"
-author: "Ewen Henderson"
-date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{ghibli guide}
@@ -37,33 +35,21 @@ for(i in names(ghibli_palettes)) print(ghibli_palette(i))
 
 Any palette names that got your attention? You will reference the palette name whenever you want to use it. The next section will show you how.
 
-## Action
+## In the wild
 
 Incorporate ghibli palettes into [ggplot2](http://ggplot2.tidyverse.org/index.html) plots:
 
-### Marnie
-
-```{r, ggplot 1}
+```{r, ggplot-marnie}
 
 library(ggplot2)
 
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
-  geom_point(size = 3) +
+  geom_jitter(size = 3) +
   scale_color_manual(values = rev(ghibli_palette("MarnieMedium1"))) +
-  theme_grey()
-```
+  theme_minimal() +
+  labs(title="Marnie Medium (1) Palette Test",
+       subtitle="A plot that is only useful for demonstration purposes")
 
-### Mononoke
-
-```{r, ggplot 2}
-
-ggplot(airquality, aes(x=Day, y=Month)) +
-  geom_tile(aes(fill=Temp)) +
-  scale_fill_gradientn(colours = ghibli_palette("MononokeMedium", 21, type = "continuous")) +
-  scale_x_discrete(expand = c(0, 0)) +
-  scale_y_discrete(expand = c(0, 0)) +
-  coord_equal() +
-  theme(legend.position = "top")
 ```
 
 <br>
