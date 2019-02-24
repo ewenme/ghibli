@@ -6,4 +6,4 @@ authors:
 navbar:
   right:
   - icon: fa-github fa-lg
-href: https://github.com/ewenme/ghibli
+    href: https://github.com/ewenme/ghibli
