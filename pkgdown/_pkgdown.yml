@@ -1,0 +1,9 @@
+url: https://ewenme.github.io/ghibli/
+
+authors:
+  Ewen Henderson:
+    href: https://ewen.io
+navbar:
+  right:
+  - icon: fa-github fa-lg
+href: https://github.com/ewenme/ghibli
