@@ -1,25 +1,28 @@
 
-ghibli <img alt="discogger Logo" title="ghibli" align="right" src="figure/ghibli-logo.png" width="100" style="float:right;width:100px;"/>
-=========================================================================================================================================
+# ghibli <img alt="ghibli Logo" title="ghibli" align="right" src="man/figures/ghibli-logo.png" width="100" style="float:right;width:100px;"/>
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://www.tidyverse.org/lifecycle/#stable) [![Build Status](https://travis-ci.org/ewenme/ghibli.svg)](https://travis-ci.org/ewenme/ghibli) [![CRAN status](http://www.r-pkg.org/badges/version/ghibli)](http://www.r-pkg.org/badges/version/ghibli) [![DLs](http://cranlogs.r-pkg.org/badges/ghibli)](http://cran.rstudio.com/web/packages/ghibli/index.html)
+[![lifecycle](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![Build
+Status](https://travis-ci.org/ewenme/ghibli.svg)](https://travis-ci.org/ewenme/ghibli)
+<http://www.r-pkg.org/badges/version/ghibli>
+[![DLs](http://cranlogs.r-pkg.org/badges/ghibli)](http://cran.rstudio.com/web/packages/ghibli/index.html)
 
-![](figure/ghibli.jpg)
+> “No matter how many weapons you have, no matter how great your
+> technology might be, the world cannot live without love\!” —*Castle in
+> the Sky (1986)*
 
-> “No matter how many weapons you have, no matter how great your technology might be, the world cannot live without love!” —*Castle in the Sky (1986)*
+｡◕‿‿◕｡ Sprinkle some Studio Ghibli palette magic over your R plots
+｡◕‿‿◕｡
 
-｡◕‿‿◕｡ Sprinkle some Studio Ghibli palette magic over your R plots ｡◕‿‿◕｡
+## Installation
 
-Installation
-------------
-
-Install the latest stable version on CRAN...
+Install the latest stable version on CRAN…
 
 ``` r
 install.packages('ghibli')
 ```
 
-...or get the development version from GitHub.
+…or get the development version from GitHub.
 
 ``` r
 # If you haven't installed remotes yet, do so
@@ -29,8 +32,7 @@ install.packages("remotes")
 remotes::install_github("ewenme/ghibli")
 ```
 
-Palettes
---------
+## Palettes
 
 ``` r
 # load package
@@ -41,7 +43,7 @@ par(mfrow=c(9,3))
 for(i in names(ghibli_palettes)) print(ghibli_palette(i))
 ```
 
-![](figure/palettes-1.png)
+![](man/figures/README-palettes-1.png)<!-- -->
 
 ### Spirited Away
 
@@ -51,7 +53,7 @@ for(i in names(ghibli_palettes)) print(ghibli_palette(i))
 ghibli_palette("SpiritedMedium")
 ```
 
-![](figure/unnamed-chunk-4-1.png)
+![](man/figures/README-unnamed-chunk-4-1.png)<!-- -->
 
 ### My Neighbor Totoro
 
@@ -61,7 +63,7 @@ ghibli_palette("SpiritedMedium")
 ghibli_palette("TotoroMedium")
 ```
 
-![](figure/unnamed-chunk-5-1.png)
+![](man/figures/README-unnamed-chunk-5-1.png)<!-- -->
 
 ### Princess Mononoke
 
@@ -71,7 +73,7 @@ ghibli_palette("TotoroMedium")
 ghibli_palette("MononokeMedium")
 ```
 
-![](figure/unnamed-chunk-6-1.png)
+![](man/figures/README-unnamed-chunk-6-1.png)<!-- -->
 
 ### When Marnie Was There
 
@@ -81,7 +83,7 @@ ghibli_palette("MononokeMedium")
 ghibli_palette("MarnieMedium1")
 ```
 
-![](figure/unnamed-chunk-7-1.png)
+![](man/figures/README-unnamed-chunk-7-1.png)<!-- -->
 
 ### Ponyo
 
@@ -91,10 +93,9 @@ ghibli_palette("MarnieMedium1")
 ghibli_palette("PonyoMedium")
 ```
 
-![](figure/unnamed-chunk-8-1.png)
+![](man/figures/README-unnamed-chunk-8-1.png)<!-- -->
 
-In the wild
------------
+## In the wild
 
 ``` r
 library(ggplot2)
@@ -107,11 +108,18 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
        subtitle="A plot that is only useful for demonstration purposes")
 ```
 
-![](figure/ggplot2-eg-1.png)
+![](man/figures/README-ggplot2-eg-1.png)<!-- -->
 
-Credits
--------
+## Credits
 
-This package was inspired by (and lots of code ported from) [Karthik Ram's `wesanderson` package](https://github.com/karthik/wesanderson).
+This package was inspired by (and lots of code ported from) [Karthik
+Ram’s `wesanderson` package](https://github.com/karthik/wesanderson).
 
-The palettes mostly come from Love magazine's [STUDIO GHIBLI FOREVER](http://www.thelovemagazine.co.uk/posts/6584/in-photos-guess-who-s-back-retrospective-of-studio-ghibli-forever-is-here) retrospective. [Kiki's Delivery Service](http://moviesincolor.com/post/64877406577/hayao-miyazaki-week-kikis-delivery-service-1989) and [My Neighbor Totoro](http://moviesincolor.com/post/64786383878/hayao-miyazaki-week-my-neighbor-totoro-1988) palettes come from [Movies in Color](http://moviesincolor.com/). Go check 'em.
+The palettes mostly come from Love magazine’s [STUDIO GHIBLI
+FOREVER](http://www.thelovemagazine.co.uk/posts/6584/in-photos-guess-who-s-back-retrospective-of-studio-ghibli-forever-is-here)
+retrospective. [Kiki’s Delivery
+Service](http://moviesincolor.com/post/64877406577/hayao-miyazaki-week-kikis-delivery-service-1989)
+and [My Neighbor
+Totoro](http://moviesincolor.com/post/64786383878/hayao-miyazaki-week-my-neighbor-totoro-1988)
+palettes come from [Movies in Color](http://moviesincolor.com/). Go
+check ’em.

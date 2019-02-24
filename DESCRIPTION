@@ -9,5 +9,5 @@ Encoding: UTF-8
 LazyData: true
 Imports: ggplot2 (>= 2.2.1)
 Suggests: knitr, rmarkdown
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
 VignetteBuilder: knitr
