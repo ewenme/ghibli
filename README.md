@@ -1,10 +1,11 @@
 
-# ghibli <img alt="ghibli Logo" title="ghibli" align="right" src="man/figures/ghibli-logo.png" width="100" style="float:right;width:100px;"/>
+# ghibli <img src="man/figures/logo.png" width="160px" align="right" />
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![Build
 Status](https://travis-ci.org/ewenme/ghibli.svg)](https://travis-ci.org/ewenme/ghibli)
-<http://www.r-pkg.org/badges/version/ghibli>
+[![CRAN
+status](http://www.r-pkg.org/badges/version/ghibli)](https://cran.r-project.org/package=ghibli)
 [![DLs](http://cranlogs.r-pkg.org/badges/ghibli)](http://cran.rstudio.com/web/packages/ghibli/index.html)
 
 > “No matter how many weapons you have, no matter how great your
