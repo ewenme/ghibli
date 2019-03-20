@@ -3,11 +3,3 @@
 language: R
 sudo: false
 cache: packages
-
-r_binary_packages:
-- dplyr
-- ggplot2
-- testthat
-- grDevices
-- knitr
-- rmarkdown

@@ -11,9 +11,11 @@ Depends: R (>= 3.1)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports:
+    grDevices
 Suggests:
     ggplot2,
-    grDevices,
+    dplyr,
     knitr,
     rmarkdown,
     testthat
