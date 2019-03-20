@@ -1,4 +1,4 @@
-In version 0.1.2, fixed malformed documentation in `ghibli_palette` and removed a bad example plot from package vignette `ghibli-guide`.
+In version 0.2.0, added support for relevant ggplot2 scales.
 
 ## Test environments
 * local OS X install, R 3.5.0
