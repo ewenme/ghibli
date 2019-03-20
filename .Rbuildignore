@@ -1,3 +1,5 @@
+^Meta$
+^doc$
 ^data-raw$
 ^docs$
 ^pkgdown

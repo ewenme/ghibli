@@ -33,11 +33,11 @@ for(i in names(ghibli_palettes)) print(ghibli_palette(i))
 
 ```
 
-Any palette names that got your attention? You will reference the palette name whenever you want to use it. The next section will show you how.
+Any palette's take your fancy? The next section will show you how to use `ghibli` palettes inside plots.
 
 ## In the wild
 
-Incorporate ghibli palettes into [ggplot2](http://ggplot2.tidyverse.org/index.html) plots:
+Use ghibli palettes with [ggplot2](http://ggplot2.tidyverse.org/index.html) by accessing the relevant `scale_[colour|fill]_ghibli_[c|d]()` functions:
 
 ```{r, ggplot-marnie}
 
@@ -45,7 +45,7 @@ library(ggplot2)
 
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   geom_jitter(size = 3) +
-  scale_color_manual(values = rev(ghibli_palette("MarnieMedium1"))) +
+  scale_colour_ghibli_d("MarnieMedium1") +
   theme_minimal() +
   labs(title="Marnie Medium (1) Palette Test",
        subtitle="A plot that is only useful for demonstration purposes")
