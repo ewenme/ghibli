@@ -6,7 +6,7 @@ Authors@R: c(
     comment = c(ORCID = "0000-0002-4748-4693")),
     person("Danielle", "Desrosiers", role = "ctb")
     )
-Version: 0.1.2.9000
+Version: 0.2.0
 Depends: R (>= 3.1)
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -14,8 +14,9 @@ LazyData: true
 Suggests:
     ggplot2,
     grDevices,
-    knitr, 
-    rmarkdown
+    knitr,
+    rmarkdown,
+    testthat
 URL: https://github.com/ewenme/ghibli
 BugReports: https://github.com/ewenme/ghibli/issues
 RoxygenNote: 6.1.1
