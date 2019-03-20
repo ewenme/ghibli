@@ -5,12 +5,18 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Studio Ghibli Palette Generator • ghibli</title>
+<title>Studio Ghibli Colour Palettes • ghibli</title>
+<!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="apple-touch-icon-60x60.png">
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- sticky kit --><script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><link href="extra.css" rel="stylesheet">
-<meta property="og:title" content="Studio Ghibli Palette Generator">
+<meta property="og:title" content="Studio Ghibli Colour Palettes">
 <meta property="og:description" content="Colour palettes inspired by Studio Ghibli films, ported to R for your enjoyment.">
 <meta property="og:image" content="https://ewenme.github.io/ghibli/logo.png">
 <meta name="twitter:card" content="summary">
@@ -32,7 +38,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">ghibli</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
       </span>
     </div>
 
@@ -90,7 +96,8 @@
 <blockquote>
 <p>“No matter how many weapons you have, no matter how great your technology might be, the world cannot live without love!” —<em>Castle in the Sky (1986)</em></p>
 </blockquote>
-<p>｡◕‿‿◕｡ Sprinkle some Studio Ghibli palette magic over your R plots ｡◕‿‿◕｡</p>
+<p>｡◕‿‿◕｡ Sprinkle some Studio Ghibli palette magic over your plots ｡◕‿‿◕｡</p>
+<p><img src="reference/figures/README-unnamed-chunk-2-1.png" width="700"></p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
@@ -106,66 +113,34 @@
 <div id="palettes" class="section level2">
 <h2 class="hasAnchor">
 <a href="#palettes" class="anchor"></a>Palettes</h2>
+<p><code>ghibli</code> provides 9 different palettes with a light, medium and dark variant for each:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="co"># load package</span></a>
 <a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ghibli)</a>
 <a class="sourceLine" id="cb3-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="co"># see palette names and colours</span></a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="co"># display palettes w/ names</span></a>
 <a class="sourceLine" id="cb3-5" data-line-number="5"><span class="kw"><a href="https://www.rdocumentation.org/packages/graphics/topics/par">par</a></span>(<span class="dt">mfrow=</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="dv">9</span>,<span class="dv">3</span>))</a>
 <a class="sourceLine" id="cb3-6" data-line-number="6"><span class="cf">for</span>(i <span class="cf">in</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/names">names</a></span>(ghibli_palettes)) <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/print">print</a></span>(<span class="kw"><a href="reference/ghibli_palette.html">ghibli_palette</a></span>(i))</a></code></pre></div>
 <p><img src="reference/figures/README-palettes-1.png" width="700"></p>
-<div id="spirited-away" class="section level3">
-<h3 class="hasAnchor">
-<a href="#spirited-away" class="anchor"></a>Spirited Away</h3>
-<p><img src="https://vice-images.vice.com/images/content-images-crops/2016/07/19/spirited-away-ghibli-miyazaki-15th-15-year-anniversary-best-animation-hannah-ewens-body-image-1468945005-size_1000.jpg?output-quality=75.jpg"></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw"><a href="reference/ghibli_palette.html">ghibli_palette</a></span>(<span class="st">"SpiritedMedium"</span>)</a></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-4-1.png" width="700"></p>
-</div>
-<div id="my-neighbor-totoro" class="section level3">
-<h3 class="hasAnchor">
-<a href="#my-neighbor-totoro" class="anchor"></a>My Neighbor Totoro</h3>
-<p><img src="http://78.media.tumblr.com/1d93af19859c5d79bd9ce518eedeeb91/tumblr_mv2zrkquSJ1s6aghro1_1280.jpg"></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw"><a href="reference/ghibli_palette.html">ghibli_palette</a></span>(<span class="st">"TotoroMedium"</span>)</a></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-5-1.png" width="700"></p>
-</div>
-<div id="princess-mononoke" class="section level3">
-<h3 class="hasAnchor">
-<a href="#princess-mononoke" class="anchor"></a>Princess Mononoke</h3>
-<p><img src="http://www.animationmagazine.net/wordpress/wp-content/uploads/Princess-Mononoke-post2.jpg"></p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw"><a href="reference/ghibli_palette.html">ghibli_palette</a></span>(<span class="st">"MononokeMedium"</span>)</a></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-6-1.png" width="700"></p>
-</div>
-<div id="when-marnie-was-there" class="section level3">
-<h3 class="hasAnchor">
-<a href="#when-marnie-was-there" class="anchor"></a>When Marnie Was There</h3>
-<p><img src="http://cinema.pfpca.org/sites/cinema/files/films/Marnie_A.jpg"></p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw"><a href="reference/ghibli_palette.html">ghibli_palette</a></span>(<span class="st">"MarnieMedium1"</span>)</a></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-7-1.png" width="700"></p>
-</div>
-<div id="ponyo" class="section level3">
-<h3 class="hasAnchor">
-<a href="#ponyo" class="anchor"></a>Ponyo</h3>
-<p><img src="https://entropymag.org/wp-content/uploads/2015/10/Ponyo-screencaps-ponyo-on-the-cliff-by-the-sea-30547658-1920-1080.png"></p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="kw"><a href="reference/ghibli_palette.html">ghibli_palette</a></span>(<span class="st">"PonyoMedium"</span>)</a></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-8-1.png" width="700"></p>
-</div>
+<p>N.B. the palettes are also <a href="https://raw.githubusercontent.com/ewenme/ghibli/master/inst/extdata/palettes.yml">exposed in YAML format</a>, for porting to other libraries.</p>
 </div>
 <div id="in-the-wild" class="section level2">
 <h2 class="hasAnchor">
 <a href="#in-the-wild" class="anchor"></a>In the wild</h2>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ggplot2)</a>
-<a class="sourceLine" id="cb9-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb9-3" data-line-number="3"><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(iris, <span class="kw"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(Sepal.Length, Sepal.Width, <span class="dt">color =</span> Species)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb9-4" data-line-number="4"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/geom_jitter.html">geom_jitter</a></span>(<span class="dt">size =</span> <span class="dv">3</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb9-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html">scale_color_manual</a></span>(<span class="dt">values =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/rev">rev</a></span>(<span class="kw"><a href="reference/ghibli_palette.html">ghibli_palette</a></span>(<span class="st">"MarnieMedium1"</span>))) <span class="op">+</span></a>
-<a class="sourceLine" id="cb9-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_minimal</a></span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb9-7" data-line-number="7"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span>(<span class="dt">title=</span><span class="st">"Marnie Medium (1) Palette Test"</span>,</a>
-<a class="sourceLine" id="cb9-8" data-line-number="8">       <span class="dt">subtitle=</span><span class="st">"A plot that is only useful for demonstration purposes"</span>)</a></code></pre></div>
+<p><code>ghibli</code> provides relevant scales for use with <code>ggplot2</code>. It only suggests <code>ggplot2</code> in order to stay lightweight, but if available you can use the <code>scale_[colour|fill]_ghibli_[c|d]()</code> functions:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ggplot2)</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="co"># ggplot stuff</span></a>
+<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(iris, <span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(Sepal.Length, Sepal.Width, <span class="dt">color =</span> Species)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb4-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/geom_jitter">geom_jitter</a></span>(<span class="dt">size =</span> <span class="dv">3</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb4-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/ggplot2/topics/ggtheme">theme_minimal</a></span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb4-7" data-line-number="7"><span class="st">  </span><span class="co"># ghibli stuff</span></a>
+<a class="sourceLine" id="cb4-8" data-line-number="8"><span class="st">  </span><span class="kw"><a href="reference/ggplot2-scales-discrete.html">scale_colour_ghibli_d</a></span>(<span class="st">"MarnieMedium1"</span>)</a></code></pre></div>
 <p><img src="reference/figures/README-ggplot2-eg-1.png" width="700"></p>
 </div>
 <div id="credits" class="section level2">
 <h2 class="hasAnchor">
 <a href="#credits" class="anchor"></a>Credits</h2>
-<p>This package was inspired by (and lots of code ported from) <a href="https://github.com/karthik/wesanderson">Karthik Ram’s <code>wesanderson</code> package</a>.</p>
+<p>This package was inspired by <a href="https://github.com/karthik/wesanderson">Karthik Ram’s <code>wesanderson</code> package</a>.</p>
 <p>The palettes mostly come from Love magazine’s <a href="http://www.thelovemagazine.co.uk/posts/6584/in-photos-guess-who-s-back-retrospective-of-studio-ghibli-forever-is-here">STUDIO GHIBLI FOREVER</a> retrospective. <a href="http://moviesincolor.com/post/64877406577/hayao-miyazaki-week-kikis-delivery-service-1989">Kiki’s Delivery Service</a> and <a href="http://moviesincolor.com/post/64786383878/hayao-miyazaki-week-my-neighbor-totoro-1988">My Neighbor Totoro</a> palettes come from <a href="http://moviesincolor.com/">Movies in Color</a>. Go check ’em.</p>
 </div>
 </div>
@@ -176,6 +151,10 @@
 <h2>Links</h2>
 <ul class="list-unstyled">
 <li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=ghibli">https://​cloud.r-project.org/​package=ghibli</a>
+</li>
+<li>Browse source code at <br><a href="https://github.com/ewenme/ghibli">https://​github.com/​ewenme/​ghibli</a>
+</li>
+<li>Report a bug at <br><a href="https://github.com/ewenme/ghibli/issues">https://​github.com/​ewenme/​ghibli/​issues</a>
 </li>
 </ul>
 </div>
@@ -192,6 +171,7 @@
 <ul class="list-unstyled">
 <li>
 <a href="https://ewen.io">Ewen Henderson</a> <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-4748-4693" target="orcid.widget"><img src="https://members.orcid.org/sites/default/files/vector_iD_icon.svg" class="orcid" alt="ORCID" height="16"></a> </li>
+<li><a href="authors.html">All authors...</a></li>
 </ul>
 </div>
 

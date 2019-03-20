@@ -6,9 +6,11 @@ output: github_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "man/figures/README-",
-  fig.height = 1
+  fig.path = "man/figures/README-"
 )
+
+library(cowplot)
+library(ghibli)
 ```
 
 # ghibli <img src="man/figures/logo.png" width="160px" align="right" />
@@ -21,7 +23,21 @@ knitr::opts_chunk$set(
 > “No matter how many weapons you have, no matter how great your technology might be, the world cannot live without love!”
 —*Castle in the Sky (1986)*
 
-｡◕‿‿◕｡  Sprinkle some Studio Ghibli palette magic over your R plots  ｡◕‿‿◕｡
+｡◕‿‿◕｡  Sprinkle some Studio Ghibli palette magic over your plots  ｡◕‿‿◕｡
+
+```{r, echo=FALSE}
+p <- ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
+  geom_jitter(size = 3) +
+  theme_minimal() +
+  # ghibli stuff
+  scale_colour_ghibli_d("MarnieMedium1")
+  
+ggdraw() +
+  draw_plot(p) +
+  draw_image("man/figures/totoro.png", x = 0.25, y = -0.2, scale = 0.7)
+
+```
+
 
 ## Installation
 
@@ -43,70 +59,37 @@ remotes::install_github("ewenme/ghibli")
 
 ## Palettes
 
+`ghibli` provides 9 different palettes with a light, medium and dark variant for each:
+
 ```{r palettes, fig.height = 5}
 # load package
 library(ghibli)
 
-# see palette names and colours
+# display palettes w/ names
 par(mfrow=c(9,3))
 for(i in names(ghibli_palettes)) print(ghibli_palette(i))
+
 ```
 
-### Spirited Away 
-
-![](https://vice-images.vice.com/images/content-images-crops/2016/07/19/spirited-away-ghibli-miyazaki-15th-15-year-anniversary-best-animation-hannah-ewens-body-image-1468945005-size_1000.jpg?output-quality=75.jpg)
-
-```{r}
-ghibli_palette("SpiritedMedium")
-```
-
-### My Neighbor Totoro
-
-![](http://78.media.tumblr.com/1d93af19859c5d79bd9ce518eedeeb91/tumblr_mv2zrkquSJ1s6aghro1_1280.jpg)
-
-```{r}
-ghibli_palette("TotoroMedium")
-```
-
-### Princess Mononoke
-
-![](http://www.animationmagazine.net/wordpress/wp-content/uploads/Princess-Mononoke-post2.jpg)
-
-```{r}
-ghibli_palette("MononokeMedium")
-```
-
-### When Marnie Was There
-
-![](http://cinema.pfpca.org/sites/cinema/files/films/Marnie_A.jpg)
-
-```{r}
-ghibli_palette("MarnieMedium1")
-```
-
-### Ponyo
-
-![](https://entropymag.org/wp-content/uploads/2015/10/Ponyo-screencaps-ponyo-on-the-cliff-by-the-sea-30547658-1920-1080.png)
-
-```{r}
-ghibli_palette("PonyoMedium")
-```
+N.B. the palettes are also [exposed in YAML format](https://raw.githubusercontent.com/ewenme/ghibli/master/inst/extdata/palettes.yml), for porting to other libraries.
 
 ## In the wild
 
-```{r, ggplot2-eg, fig.height = 3}
+`ghibli` provides relevant scales for use with `ggplot2`. It only suggests `ggplot2` in order to stay lightweight, but if available you can use the `scale_[colour|fill]_ghibli_[c|d]()` functions:
+
+```{r, ggplot2-eg}
 library(ggplot2)
 
+# ggplot stuff
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   geom_jitter(size = 3) +
-  scale_color_manual(values = rev(ghibli_palette("MarnieMedium1"))) +
   theme_minimal() +
-  labs(title="Marnie Medium (1) Palette Test",
-       subtitle="A plot that is only useful for demonstration purposes")
+  # ghibli stuff
+  scale_colour_ghibli_d("MarnieMedium1")
 ```
 
 ## Credits
 
-This package was inspired by (and lots of code ported from) [Karthik Ram's `wesanderson` package](https://github.com/karthik/wesanderson). 
+This package was inspired by [Karthik Ram's `wesanderson` package](https://github.com/karthik/wesanderson). 
 
 The palettes mostly come from Love magazine's [STUDIO GHIBLI FOREVER](http://www.thelovemagazine.co.uk/posts/6584/in-photos-guess-who-s-back-retrospective-of-studio-ghibli-forever-is-here) retrospective. [Kiki's Delivery Service](http://moviesincolor.com/post/64877406577/hayao-miyazaki-week-kikis-delivery-service-1989) and [My Neighbor Totoro](http://moviesincolor.com/post/64786383878/hayao-miyazaki-week-my-neighbor-totoro-1988) palettes come from [Movies in Color](http://moviesincolor.com/). Go check 'em.
