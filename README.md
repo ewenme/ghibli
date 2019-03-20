@@ -51,8 +51,8 @@ for(i in names(ghibli_palettes)) print(ghibli_palette(i))
 ![](man/figures/README-palettes-1.png)<!-- -->
 
 N.B. the palettes are also [exposed in YAML
-format](https://raw.githubusercontent.com/ewenme/ghibli/master/inst/extdata/palettes.yml),
-for porting to other libraries.
+format](https://raw.githubusercontent.com/ewenme/ghibli/master/inst/extdata/palettes.yml)
+for easier porting to new libraries.
 
 ## In the wild
 
