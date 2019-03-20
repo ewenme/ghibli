@@ -1,4 +1,8 @@
+^Meta$
+^doc$
+^data-raw$
 ^docs$
+^pkgdown
 ^_pkgdown\.yml$
 ^packrat/
 ^\.Rprofile$
