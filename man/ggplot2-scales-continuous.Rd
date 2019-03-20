@@ -3,9 +3,15 @@
 \name{ggplot2-scales-continuous}
 \alias{ggplot2-scales-continuous}
 \alias{scale_colour_ghibli_c}
+\alias{scale_color_ghibli_c}
+\alias{scale_fill_ghibli_c}
 \title{Continuous scales to use for ggplot2}
 \usage{
 scale_colour_ghibli_c(name, direction = 1, ...)
+
+scale_color_ghibli_c(name, direction = 1, ...)
+
+scale_fill_ghibli_c(name, direction = 1, ...)
 }
 \arguments{
 \item{name}{Name of desired palette.}

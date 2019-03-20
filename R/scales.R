@@ -82,7 +82,7 @@ scale_color_ghibli_c <- scale_colour_ghibli_c
 #' @rdname ggplot2-scales-continuous
 #' @export
 #'
-scale_fill_ghibli_c <- function(package, palette, direction = 1, ...) {
+scale_fill_ghibli_c <- function(name, direction = 1, ...) {
 
   ggplot2::scale_fill_gradientn(colours = ghibli_palette(name = name, direction = direction,
                                                          n = 256, type = "continuous"), ...)
