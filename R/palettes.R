@@ -39,12 +39,12 @@ ghibli_palette <- function(name, n, direction = 1, type = c("discrete", "continu
     n <- length(pal)
   }
 
+  type <- match.arg(type)
+
   if (type == "discrete" && n > length(pal)) {
     stop(paste0("Number of requested colors greater than what palette can offer, which is ",
                 length(pal), "."))
   }
-
-  type <- match.arg(type)
 
   out <- switch(type,
                 continuous = grDevices::colorRampPalette(pal)(n),
