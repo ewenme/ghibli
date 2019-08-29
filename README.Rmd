@@ -9,6 +9,7 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-"
 )
 
+library(ggplot2)
 library(cowplot)
 library(ghibli)
 ```
@@ -30,7 +31,7 @@ p <- ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   geom_jitter(size = 3) +
   theme_minimal() +
   # ghibli stuff
-  scale_colour_ghibli_d("MarnieMedium1")
+  scale_colour_ghibli_d("LaputaMedium", direction = -1)
   
 ggdraw() +
   draw_plot(p) +
@@ -85,7 +86,7 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   geom_jitter(size = 3) +
   theme_minimal() +
   # ghibli stuff
-  scale_colour_ghibli_d("MarnieMedium1")
+  scale_colour_ghibli_d("LaputaMedium", direction = -1)
 ```
 
 ## Credits

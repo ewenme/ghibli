@@ -68,7 +68,7 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   geom_jitter(size = 3) +
   theme_minimal() +
   # ghibli stuff
-  scale_colour_ghibli_d("MarnieMedium1")
+  scale_colour_ghibli_d("LaputaMedium", direction = -1)
 ```
 
 ![](man/figures/README-ggplot2-eg-1.png)<!-- -->
