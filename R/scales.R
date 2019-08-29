@@ -21,6 +21,10 @@
 #' @export
 scale_colour_ghibli_d <- function(name, direction = 1, ...) {
 
+  if (!requireNamespace("ggplot2", quietly = TRUE)) {
+    stop('ggplot2 is required for this functionality', call. = FALSE)
+  }
+
   ggplot2::discrete_scale("colour", scale_name = name,
                           pal_pal(name = name, direction = direction), ...)
 
@@ -35,6 +39,10 @@ scale_color_ghibli_d <- scale_colour_ghibli_d
 #' @export
 #'
 scale_fill_ghibli_d <- function(name, direction = 1, ...) {
+
+  if (!requireNamespace("ggplot2", quietly = TRUE)) {
+    stop('ggplot2 is required for this functionality', call. = FALSE)
+  }
 
   ggplot2::discrete_scale("fill", scale_name = name,
                           pal_pal(name = name, direction = direction), ...)
@@ -70,6 +78,10 @@ scale_fill_ghibli_d <- function(name, direction = 1, ...) {
 #' @export
 scale_colour_ghibli_c <- function(name, direction = 1, ...) {
 
+  if (!requireNamespace("ggplot2", quietly = TRUE)) {
+    stop('ggplot2 is required for this functionality', call. = FALSE)
+  }
+
   ggplot2::scale_colour_gradientn(
     colours = ghibli_palette(name = name, direction = direction,
                              n = 256, type = "continuous"), ...)
@@ -84,6 +96,11 @@ scale_color_ghibli_c <- scale_colour_ghibli_c
 #'
 scale_fill_ghibli_c <- function(name, direction = 1, ...) {
 
-  ggplot2::scale_fill_gradientn(colours = ghibli_palette(name = name, direction = direction,
-                                                         n = 256, type = "continuous"), ...)
+  if (!requireNamespace("ggplot2", quietly = TRUE)) {
+    stop('ggplot2 is required for this functionality', call. = FALSE)
+  }
+
+  ggplot2::scale_fill_gradientn(
+    colours = ghibli_palette(name = name, direction = direction,
+                             n = 256, type = "continuous"), ...)
 }

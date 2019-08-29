@@ -21,6 +21,8 @@ library(ghibli)
 [![CRAN status](http://www.r-pkg.org/badges/version/ghibli)](https://cran.r-project.org/package=ghibli)
 [![DLs](http://cranlogs.r-pkg.org/badges/ghibli)](http://cran.rstudio.com/web/packages/ghibli/index.html)
 
+## Overview
+
 > “No matter how many weapons you have, no matter how great your technology might be, the world cannot live without love!”
 —*Castle in the Sky (1986)*
 
@@ -91,6 +93,6 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
 
 ## Credits
 
-This package was inspired by [Karthik Ram's `wesanderson` package](https://github.com/karthik/wesanderson). 
+This package was largely inspired by [Karthik Ram's `wesanderson` package](https://github.com/karthik/wesanderson). 
 
-The palettes mostly come from Love magazine's [STUDIO GHIBLI FOREVER](http://www.thelovemagazine.co.uk/posts/6584/in-photos-guess-who-s-back-retrospective-of-studio-ghibli-forever-is-here) retrospective. [Kiki's Delivery Service](http://moviesincolor.com/post/64877406577/hayao-miyazaki-week-kikis-delivery-service-1989) and [My Neighbor Totoro](http://moviesincolor.com/post/64786383878/hayao-miyazaki-week-my-neighbor-totoro-1988) palettes come from [Movies in Color](http://moviesincolor.com/). Go check 'em.
+The palettes themselves come from [Movies in Color](http://moviesincolor.com/). Go check 'em.

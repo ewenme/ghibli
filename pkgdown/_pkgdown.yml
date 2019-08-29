@@ -1,9 +1,32 @@
 url: https://ewenme.github.io/ghibli/
 
+template:
+  params:
+    bootswatch: united
+
+home:
+  strip_header: true
+
 authors:
   Ewen Henderson:
     href: https://ewen.io
 navbar:
+  type: inverse
+  left:
+    - text: "Quick Start"
+      href: articles/ghibli-guide.html
+    - text: "Reference"
+      href: reference/index.html
   right:
   - icon: fa-github fa-lg
     href: https://github.com/ewenme/ghibli
+
+reference:
+  - title: "ggplot2 helpers"
+    desc: "Use ghibli in ggplot2 workflows."
+    contents:
+      - starts_with("scale_")
+  - title: "Palette helpers"
+    desc: "Use ghibli palettes."
+    contents:
+      - matches("palette")

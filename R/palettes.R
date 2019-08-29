@@ -10,8 +10,6 @@
 #' @param direction Either `1` or `-1`. If `-1` the palette will be reversed.
 #' @param type Either "continuous" or "discrete". Use continuous if you want
 #'   to automatically interpolate between colours.
-#' @importFrom graphics rect par image text
-#' @importFrom grDevices rgb
 #' @return A vector of colours.
 #' @export
 #' @keywords colors
@@ -47,7 +45,7 @@ ghibli_palette <- function(name, n, direction = 1, type = c("discrete", "continu
   }
 
   out <- switch(type,
-                continuous = grDevices::colorRampPalette(pal)(n),
+                continuous = colorRampPalette(pal)(n),
                 discrete = pal[1:n]
   )
 
@@ -68,8 +66,6 @@ pal_pal <- function(name, direction) {
 }
 
 #' @export
-#' @importFrom graphics rect par image text
-#' @importFrom grDevices rgb
 print.palette <- function(x, ...) {
   n <- length(x)
   old <- par(mar = c(0.5, 0.5, 0.5, 0.5))
