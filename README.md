@@ -38,8 +38,10 @@ remotes::install_github("ewenme/ghibli")
 
 ## Palettes
 
+<img src="man/figures/spirited-pal.jpg" width="75%" />
+
 `ghibli` provides 9 different palettes with a light, medium and dark
-variant for each:
+variant for each.
 
 ``` r
 # load package

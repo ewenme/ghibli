@@ -62,7 +62,11 @@ remotes::install_github("ewenme/ghibli")
 
 ## Palettes
 
-`ghibli` provides 9 different palettes with a light, medium and dark variant for each:
+```{r out.width="75%", echo=FALSE}
+knitr::include_graphics("man/figures/spirited-pal.jpg")
+```
+
+`ghibli` provides 9 different palettes with a light, medium and dark variant for each.
 
 ```{r palettes, fig.height = 5}
 # load package
