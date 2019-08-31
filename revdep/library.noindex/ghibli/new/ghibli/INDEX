@@ -1,6 +1,5 @@
 ggplot2-scales-continuous
                         Continuous scales to use for ggplot2
-ghibli                  'ghibli' package
 ghibli_palette          A Studio Ghibli palette generator
 ghibli_palettes         Complete list of available ghibli palettes
 scale_colour_ghibli_d   Discrete scales to use for ggplot2

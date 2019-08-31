@@ -10,11 +10,9 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^\.travis\.yml$
-^NEWS\.md$
-^ghibli\.jpg$
 ^README\.md$
 ^README\.Rmd$
-figure/
 ^cran-comments\.md$
 ^figure$
 revdep/
+^revdep$

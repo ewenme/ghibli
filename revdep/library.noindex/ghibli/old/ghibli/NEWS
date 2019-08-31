@@ -1,3 +1,7 @@
+Version 0.2.0
+=============
+* Added support for relevant ggplot2 scales (continuous/discrete).
+
 Version 0.1.2
 =============
 * Fixed malformed documentation in `ghibli_palette`.

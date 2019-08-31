@@ -2,21 +2,21 @@
 
 |field    |value                        |
 |:--------|:----------------------------|
-|version  |R version 3.5.0 (2018-04-23) |
-|os       |macOS  10.14.2               |
+|version  |R version 3.6.0 (2019-04-26) |
+|os       |macOS Mojave 10.14.5         |
 |system   |x86_64, darwin15.6.0         |
 |ui       |RStudio                      |
 |language |(EN)                         |
 |collate  |en_GB.UTF-8                  |
 |ctype    |en_GB.UTF-8                  |
 |tz       |Europe/London                |
-|date     |2019-03-20                   |
+|date     |2019-08-31                   |
 
 # Dependencies
 
 |package |old   |new   |Δ  |
 |:-------|:-----|:-----|:--|
-|ghibli  |0.1.2 |0.2.0 |*  |
+|ghibli  |0.2.0 |0.3.0 |*  |
 
 # Revdeps
 

@@ -6,21 +6,22 @@ Authors@R: c(
     comment = c(ORCID = "0000-0002-4748-4693")),
     person("Danielle", "Desrosiers", role = "ctb")
     )
-Version: 0.2.0
-Depends: R (>= 3.1)
+Version: 0.3.0
+Depends: R (>= 2.10)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Suggests: ggplot2, grDevices, knitr, rmarkdown, testthat
-URL: https://github.com/ewenme/ghibli
+Imports: grDevices
+Suggests: ggplot2, dplyr, knitr, rmarkdown, testthat
+URL: https://github.com/ewenme/ghibli, https://ewenme.github.io/ghibli/
 BugReports: https://github.com/ewenme/ghibli/issues
 RoxygenNote: 6.1.1
 VignetteBuilder: knitr
 RemoteType: local
 RemoteUrl: /Users/Ewen/Documents/Github/ghibli
 NeedsCompilation: no
-Packaged: 2019-03-20 21:21:01 UTC; Ewen
+Packaged: 2019-08-31 11:43:22 UTC; Ewen
 Author: Ewen Henderson [aut, cre] (<https://orcid.org/0000-0002-4748-4693>),
   Danielle Desrosiers [ctb]
 Maintainer: Ewen Henderson <ewenhenderson@gmail.com>
-Built: R 3.5.0; ; 2019-03-20 21:21:02 UTC; unix
+Built: R 3.6.0; ; 2019-08-31 11:43:23 UTC; unix

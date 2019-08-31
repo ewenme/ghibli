@@ -1,6 +1,6 @@
-ghibli-package	ghibli
+ghibli-package	ghibli-package
 ggplot2-scales-continuous	ggplot2-scales-continuous
-ghibli	ghibli
+ghibli	ghibli-package
 ghibli_palette	ghibli_palette
 ghibli_palettes	ghibli_palettes
 scale_color_ghibli_c	ggplot2-scales-continuous
