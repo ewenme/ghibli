@@ -1,11 +1,12 @@
 #' A Studio Ghibli palette generator
 #'
 #' These are some color palettes from Studio Ghibli films.
+#' All color schemes are derived from
+#' \href{https://moviesincolor.com/post/145269683743/i-got-to-make-some-color-palettes-for-the-best}{Movies In Color}.
 #'
 #' @param n Number of colors desired. All palettes now only have seven colors.
-#'   All color schemes are derived from this Studio Ghibli retrospective:
-#'   \href{http://www.thelovemagazine.co.uk/posts/6584/in-photos-guess-who-s-back-retrospective-of-studio-ghibli-forever-is-here}{Studio Ghibli retrospective}.
-#'   If omitted, uses all colours.
+#' If omitted, uses all colours.
+#'
 #' @param name Name of desired palette.
 #' @param direction Either `1` or `-1`. If `-1` the palette will be reversed.
 #' @param type Either "continuous" or "discrete". Use continuous if you want

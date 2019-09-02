@@ -1,12 +1,13 @@
 Package: ghibli
 Title: Studio Ghibli Colour Palettes
-Description: Colour palettes inspired by Studio Ghibli films, ported to R for your enjoyment.
+Description: Colour palettes inspired by Studio Ghibli <https://en.wikipedia.org/wiki/Studio_Ghibli> 
+    films, ported to R for your enjoyment.
 Authors@R: c(
     person("Ewen", "Henderson", email = "ewenhenderson@gmail.com", role = c("aut", "cre"),
     comment = c(ORCID = "0000-0002-4748-4693")),
     person("Danielle", "Desrosiers", role = "ctb")
     )
-Version: 0.2.0.9000
+Version: 0.3.0
 Depends: R (>= 2.10)
 License: MIT + file LICENSE
 Encoding: UTF-8

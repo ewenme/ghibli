@@ -11,8 +11,6 @@ ghibli_palette(name, n, direction = 1, type = c("discrete",
 \item{name}{Name of desired palette.}
 
 \item{n}{Number of colors desired. All palettes now only have seven colors.
-All color schemes are derived from this Studio Ghibli retrospective:
-\href{http://www.thelovemagazine.co.uk/posts/6584/in-photos-guess-who-s-back-retrospective-of-studio-ghibli-forever-is-here}{Studio Ghibli retrospective}.
 If omitted, uses all colours.}
 
 \item{direction}{Either `1` or `-1`. If `-1` the palette will be reversed.}
@@ -25,6 +23,8 @@ A vector of colours.
 }
 \description{
 These are some color palettes from Studio Ghibli films.
+All color schemes are derived from
+\href{https://moviesincolor.com/post/145269683743/i-got-to-make-some-color-palettes-for-the-best}{Movies In Color}.
 }
 \examples{
 ghibli_palette("PonyoLight")

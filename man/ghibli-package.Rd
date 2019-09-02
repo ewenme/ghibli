@@ -8,7 +8,8 @@
 \description{
 \if{html}{\figure{logo.png}{options: align='right'}}
 
-Colour palettes inspired by Studio Ghibli films, ported to R for your enjoyment.
+Colour palettes inspired by Studio Ghibli <https://en.wikipedia.org/wiki/Studio_Ghibli> 
+    films, ported to R for your enjoyment.
 }
 \seealso{
 Useful links:
