@@ -12,14 +12,6 @@ authors:
     href: https://ewen.io
 navbar:
   type: inverse
-  left:
-    - text: "Quick Start"
-      href: articles/ghibli-guide.html
-    - text: "Reference"
-      href: reference/index.html
-  right:
-  - icon: fa-github fa-lg
-    href: https://github.com/ewenme/ghibli
 
 reference:
   - title: "ggplot2 helpers"
