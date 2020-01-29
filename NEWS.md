@@ -1,5 +1,7 @@
 # Version 0.3.0
 
+* Calling `ghibli_palette` as `ghibli::ghibli_palette` without loading the `ghibli` package first works (#5, @michaelchirico)
+
 ## Breaking changes
 
 * Most colours used within `ghibli` palettes have seen hex values updates. In most cases, these are extremely small hex value tweaks. Several colours within the `MarnieLight1` and `MarnieMedium1` palettes have changed noticeably, where these were inconsistent with source material.
