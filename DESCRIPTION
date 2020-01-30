@@ -5,7 +5,8 @@ Description: Colour palettes inspired by Studio Ghibli <https://en.wikipedia.org
 Authors@R: c(
     person("Ewen", "Henderson", email = "ewenhenderson@gmail.com", role = c("aut", "cre"),
     comment = c(ORCID = "0000-0002-4748-4693")),
-    person("Danielle", "Desrosiers", role = "ctb")
+    person("Danielle", "Desrosiers", role = "ctb"),
+    person("Michael", "Chirico", role = "ctb")
     )
 Version: 0.3.0.9000
 Depends: R (>= 2.10)
