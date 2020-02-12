@@ -1,6 +1,8 @@
-# Version 0.3.0
+# Version 0.3.1
 
 * Calling `ghibli_palette` as `ghibli::ghibli_palette` without loading the `ghibli` package first works (#5, @michaelchirico)
+
+# Version 0.3.0
 
 ## Breaking changes
 
