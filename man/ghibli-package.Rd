@@ -26,6 +26,7 @@ Useful links:
 Other contributors:
 \itemize{
   \item Danielle Desrosiers [contributor]
+  \item Michael Chirico [contributor]
 }
 
 }
