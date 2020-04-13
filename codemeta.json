@@ -14,7 +14,7 @@
   ],
   "issueTracker": "https://github.com/ewenme/ghibli/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.3.1.9000",
+  "version": "0.3.2",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -185,7 +185,6 @@
   ],
   "releaseNotes": "https://github.com/ewenme/ghibli/blob/master/NEWS.md",
   "readme": "https://github.com/ewenme/ghibli/blob/master/README.md",
-  "fileSize": "673.606KB",
   "contIntegration": "https://travis-ci.org/ewenme/ghibli",
   "developmentStatus": "https://www.tidyverse.org/lifecycle/#stable",
   "keywords": [
