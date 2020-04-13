@@ -6,7 +6,7 @@
 \alias{ghibli-package}
 \title{ghibli: Studio Ghibli Colour Palettes}
 \description{
-\if{html}{\figure{logo.png}{options: align='right'}}
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
 Colour palettes inspired by Studio Ghibli <https://en.wikipedia.org/wiki/Studio_Ghibli> 
     films, ported to R for your enjoyment.
@@ -14,14 +14,14 @@ Colour palettes inspired by Studio Ghibli <https://en.wikipedia.org/wiki/Studio_
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/ewenme/ghibli}
   \item \url{https://ewenme.github.io/ghibli/}
+  \item \url{https://github.com/ewenme/ghibli}
   \item Report bugs at \url{https://github.com/ewenme/ghibli/issues}
 }
 
 }
 \author{
-\strong{Maintainer}: Ewen Henderson \email{ewenhenderson@gmail.com} (0000-0002-4748-4693)
+\strong{Maintainer}: Ewen Henderson \email{ewenhenderson@gmail.com} (\href{https://orcid.org/0000-0002-4748-4693}{ORCID})
 
 Other contributors:
 \itemize{

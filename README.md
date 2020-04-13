@@ -29,9 +29,6 @@ install.packages('ghibli')
 …or get the development version from GitHub.
 
 ``` r
-# If you haven't installed remotes yet, do so
-install.packages("remotes")
-
 # install package from github
 remotes::install_github("ewenme/ghibli")
 ```
@@ -40,7 +37,7 @@ remotes::install_github("ewenme/ghibli")
 
 <img src="man/figures/spirited-pal.jpg" width="75%" />
 
-`ghibli` provides 9 different palettes with a light, medium and dark
+`ghibli` provides 9 unique palettes, with a light, medium and dark
 variant for each.
 
 ``` r
@@ -54,9 +51,25 @@ for(i in names(ghibli_palettes)) print(ghibli_palette(i))
 
 ![](man/figures/README-palettes-1.png)<!-- -->
 
-N.B. the palettes are also [exposed in YAML
+**N.B.** the palettes are [exposed in YAML
 format](https://raw.githubusercontent.com/ewenme/ghibli/master/inst/extdata/palettes.yml)
 for easier porting to new libraries.
+
+All colour palettes are stored as `color` objects (courtesy of the
+[prismatic](https://emilhvitfeldt.github.io/prismatic/index.html)
+package) inside `ghibli_palettes` with lovely printing/plotting methods
+to help you preview flavours.
+
+``` r
+plot(ghibli_palettes$MarnieMedium1)
+```
+
+![](man/figures/README-unnamed-chunk-6-1.png)<!-- -->
+
+If [crayon](https://github.com/r-lib/crayon) is installed, the print
+method will be extremely cute.
+
+![](man/figures/print.png)
 
 ## In the wild
 

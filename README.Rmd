@@ -17,9 +17,9 @@ library(ghibli)
 # ghibli <img src="man/figures/logo.png" width="160px" align="right" />
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://www.tidyverse.org/lifecycle/#stable)
-[![Build Status](https://travis-ci.org/ewenme/ghibli.svg)](https://travis-ci.org/ewenme/ghibli) 
 [![CRAN status](http://www.r-pkg.org/badges/version/ghibli)](https://cran.r-project.org/package=ghibli)
 [![DLs](http://cranlogs.r-pkg.org/badges/ghibli)](http://cran.rstudio.com/web/packages/ghibli/index.html)
+[![Travis build Status](https://travis-ci.org/ewenme/ghibli.svg)](https://travis-ci.org/ewenme/ghibli) 
 
 ## Overview
 
@@ -41,7 +41,6 @@ ggdraw() +
 
 ```
 
-
 ## Installation
 
 Install the latest stable version on CRAN...
@@ -53,9 +52,6 @@ install.packages('ghibli')
 ...or get the development version from GitHub. 
 
 ```{r, eval = FALSE}
-# If you haven't installed remotes yet, do so
-install.packages("remotes")
-
 # install package from github
 remotes::install_github("ewenme/ghibli")
 ```
@@ -66,7 +62,7 @@ remotes::install_github("ewenme/ghibli")
 knitr::include_graphics("man/figures/spirited-pal.jpg")
 ```
 
-`ghibli` provides 9 different palettes with a light, medium and dark variant for each.
+`ghibli` provides 9 unique palettes, with a light, medium and dark variant for each.
 
 ```{r palettes, fig.height = 5}
 # load package
@@ -78,7 +74,17 @@ for(i in names(ghibli_palettes)) print(ghibli_palette(i))
 
 ```
 
-N.B. the palettes are also [exposed in YAML format](https://raw.githubusercontent.com/ewenme/ghibli/master/inst/extdata/palettes.yml) for easier porting to new libraries.
+**N.B.** the palettes are [exposed in YAML format](https://raw.githubusercontent.com/ewenme/ghibli/master/inst/extdata/palettes.yml) for easier porting to new libraries.
+
+All colour palettes are stored as `color` objects (courtesy of the [prismatic](https://emilhvitfeldt.github.io/prismatic/index.html) package) inside  `ghibli_palettes` with lovely printing/plotting methods to help you preview flavours.
+
+```{r}
+plot(ghibli_palettes$MarnieMedium1)
+```
+
+If [crayon](https://github.com/r-lib/crayon) is installed, the print method will be extremely cute.
+
+![](man/figures/print.png)
 
 ## In the wild
 
