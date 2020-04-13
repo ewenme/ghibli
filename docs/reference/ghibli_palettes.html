@@ -45,7 +45,7 @@
   
 
 <meta property="og:title" content="Complete list of available ghibli palettes — ghibli_palettes" />
-<meta property="og:description" content="Use ghibli_palette to construct palettes of desired length." />
+<meta property="og:description" content="A list of all colour palettes to choose from, and preview directly in the console." />
 <meta property="og:image" content="https://ewenme.github.io/ghibli/logo.png" />
 <meta name="twitter:card" content="summary" />
 
@@ -79,7 +79,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">ghibli</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.3.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.3.1.9000</span>
       </span>
     </div>
 
@@ -136,7 +136,7 @@
     </div>
 
     <div class="ref-description">
-    <p>Use <code><a href='ghibli_palette.html'>ghibli_palette</a></code> to construct palettes of desired length.</p>
+    <p>A list of all colour palettes to choose from, and preview directly in the console.</p>
     </div>
 
     <pre class="usage"><span class='no'>ghibli_palettes</span></pre>
@@ -144,13 +144,23 @@
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A list of 27 character vector elements.</p>
+    <p>A list of 27 <code>color</code> objects elements.</p>
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>Pretty print and plot methods are powered by the <a href='http://www.r-project.org'>prismatic</a>
+package. Each palette is stored as a <code>color</code> object to enact this behaviour.</p>
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <div class='dont-index'><p>See <code><a href='ghibli_palette.html'>ghibli_palette</a></code> to construct palettes of desired length, and
+<code><a href='https://rdrr.io/pkg/prismatic/man/color.html'>colour</a></code> for constructing color objects.</p></div>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#format">Format</a></li>
+      <li><a href="#details">Details</a></li>
+      <li><a href="#see-also">See also</a></li>
     </ul>
 
   </div>

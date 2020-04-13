@@ -40,7 +40,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">ghibli</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.3.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.3.1.9000</span>
       </span>
     </div>
 
@@ -108,17 +108,14 @@
 <p>Install the latest stable version on CRAN…</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">'ghibli'</span>)</a></code></pre></div>
 <p>…or get the development version from GitHub.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># If you haven't installed remotes yet, do so</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"remotes"</span>)</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="co"># install package from github</span></a>
-<a class="sourceLine" id="cb2-5" data-line-number="5">remotes<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/remotes/man/install_github.html">install_github</a></span>(<span class="st">"ewenme/ghibli"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># install package from github</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">remotes<span class="op">::</span><span class="kw"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"ewenme/ghibli"</span>)</a></code></pre></div>
 </div>
 <div id="palettes" class="section level2">
 <h2 class="hasAnchor">
 <a href="#palettes" class="anchor"></a>Palettes</h2>
 <p><img src="reference/figures/spirited-pal.jpg" width="75%"></p>
-<p><code>ghibli</code> provides 9 different palettes with a light, medium and dark variant for each.</p>
+<p><code>ghibli</code> provides 9 unique palettes, with a light, medium and dark variant for each.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="co"># load package</span></a>
 <a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(ghibli)</a>
 <a class="sourceLine" id="cb3-3" data-line-number="3"></a>
@@ -126,20 +123,25 @@
 <a class="sourceLine" id="cb3-5" data-line-number="5"><span class="kw"><a href="https://rdrr.io/r/graphics/par.html">par</a></span>(<span class="dt">mfrow=</span><span class="kw"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="dv">9</span>,<span class="dv">3</span>))</a>
 <a class="sourceLine" id="cb3-6" data-line-number="6"><span class="cf">for</span>(i <span class="cf">in</span> <span class="kw"><a href="https://rdrr.io/r/base/names.html">names</a></span>(ghibli_palettes)) <span class="kw"><a href="https://rdrr.io/r/base/print.html">print</a></span>(<span class="kw"><a href="reference/ghibli_palette.html">ghibli_palette</a></span>(i))</a></code></pre></div>
 <p><img src="reference/figures/README-palettes-1.png"><!-- --></p>
-<p>N.B. the palettes are also <a href="https://raw.githubusercontent.com/ewenme/ghibli/master/inst/extdata/palettes.yml">exposed in YAML format</a> for easier porting to new libraries.</p>
+<p><strong>N.B.</strong> the palettes are <a href="https://raw.githubusercontent.com/ewenme/ghibli/master/inst/extdata/palettes.yml">exposed in YAML format</a> for easier porting to new libraries.</p>
+<p>All colour palettes are stored as <code>color</code> objects (courtesy of the <a href="https://emilhvitfeldt.github.io/prismatic/index.html">prismatic</a> package) inside <code>ghibli_palettes</code> with lovely printing/plotting methods to help you preview flavours.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/graphics/plot.html">plot</a></span>(ghibli_palettes<span class="op">$</span>MarnieMedium1)</a></code></pre></div>
+<p><img src="reference/figures/README-unnamed-chunk-6-1.png"><!-- --></p>
+<p>If <a href="https://github.com/r-lib/crayon">crayon</a> is installed, the print method will be extremely cute.</p>
+<p><img src="reference/figures/print.png"></p>
 </div>
 <div id="in-the-wild" class="section level2">
 <h2 class="hasAnchor">
 <a href="#in-the-wild" class="anchor"></a>In the wild</h2>
 <p><code>ghibli</code> provides relevant scales for use with <code>ggplot2</code>. It only suggests <code>ggplot2</code> in order to stay lightweight, but if available you can use the <code>scale_[colour|fill]_ghibli_[c|d]()</code> functions:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(ggplot2)</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="co"># ggplot stuff</span></a>
-<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(iris, <span class="kw"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(Sepal.Length, Sepal.Width, <span class="dt">color =</span> Species)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/geom_jitter.html">geom_jitter</a></span>(<span class="dt">size =</span> <span class="dv">3</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_minimal</a></span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-7" data-line-number="7"><span class="st">  </span><span class="co"># ghibli stuff</span></a>
-<a class="sourceLine" id="cb4-8" data-line-number="8"><span class="st">  </span><span class="kw"><a href="reference/ggplot2-scales-discrete.html">scale_colour_ghibli_d</a></span>(<span class="st">"LaputaMedium"</span>, <span class="dt">direction =</span> <span class="dv">-1</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(ggplot2)</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="co"># ggplot stuff</span></a>
+<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(iris, <span class="kw"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(Sepal.Length, Sepal.Width, <span class="dt">color =</span> Species)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/geom_jitter.html">geom_jitter</a></span>(<span class="dt">size =</span> <span class="dv">3</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_minimal</a></span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="st">  </span><span class="co"># ghibli stuff</span></a>
+<a class="sourceLine" id="cb5-8" data-line-number="8"><span class="st">  </span><span class="kw"><a href="reference/ggplot2-scales-discrete.html">scale_colour_ghibli_d</a></span>(<span class="st">"LaputaMedium"</span>, <span class="dt">direction =</span> <span class="dv">-1</span>)</a></code></pre></div>
 <p><img src="reference/figures/README-ggplot2-eg-1.png"><!-- --></p>
 </div>
 <div id="credits" class="section level2">
@@ -166,9 +168,8 @@
 <div class="license">
 <h2>License</h2>
 <ul class="list-unstyled">
-<li>
-<a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a>
-</li>
+<li><a href="LICENSE.html">Full license</a></li>
+<li><small><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
 </ul>
 </div>
 <div class="developers">
