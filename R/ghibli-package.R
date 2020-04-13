@@ -1,4 +1,5 @@
 #' @importFrom grDevices colorRampPalette rgb
+#' @importFrom prismatic colour
 #' @importFrom graphics rect par image text
 #' @keywords internal
 "_PACKAGE"

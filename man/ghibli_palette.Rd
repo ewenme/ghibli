@@ -4,8 +4,7 @@
 \alias{ghibli_palette}
 \title{A Studio Ghibli palette generator}
 \usage{
-ghibli_palette(name, n, direction = 1, type = c("discrete",
-  "continuous"))
+ghibli_palette(name, n, direction = 1, type = c("discrete", "continuous"))
 }
 \arguments{
 \item{name}{Name of desired palette.}
@@ -35,6 +34,6 @@ ghibli_palette("MarnieMedium2", 3)
 # If you need more colours than normally found in a palette, you
 # can use a continuous palette to interpolate between existing
 # colours
-pal <- ghibli_palette(21, name = "YesterdayLight", type = "continuous")
+pal <- ghibli_palette(name = "YesterdayLight", n = 21, type = "continuous")
 }
 \keyword{colors}

@@ -23,7 +23,7 @@
 #' # If you need more colours than normally found in a palette, you
 #' # can use a continuous palette to interpolate between existing
 #' # colours
-#' pal <- ghibli_palette(21, name = "YesterdayLight", type = "continuous")
+#' pal <- ghibli_palette(name = "YesterdayLight", n = 21, type = "continuous")
 ghibli_palette <- function(name, n, direction = 1, type = c("discrete", "continuous")) {
 
   if (abs(direction) != 1) {
