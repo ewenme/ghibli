@@ -18,3 +18,4 @@ revdep/
 ^revdep$
 ^LICENSE\.md$
 ^codemeta\.json$
+^CODE_OF_CONDUCT\.md$

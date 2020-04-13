@@ -1,8 +1,8 @@
 ---
-title: "A ghibli guide"
+title: "Get started with ghibli"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{ghibli guide}
+  %\VignetteIndexEntry{get started}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

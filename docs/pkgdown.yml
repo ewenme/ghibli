@@ -2,7 +2,7 @@ pandoc: 2.3.1
 pkgdown: 1.4.1
 pkgdown_sha: ~
 articles:
-  ghibli-guide: ghibli-guide.html
+  ghibli: ghibli.html
 urls:
   reference: https://ewenme.github.io/ghibli//reference
   article: https://ewenme.github.io/ghibli//articles

@@ -2,11 +2,11 @@
 # ghibli <img src="man/figures/logo.png" width="160px" align="right" />
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://www.tidyverse.org/lifecycle/#stable)
-[![Build
-Status](https://travis-ci.org/ewenme/ghibli.svg)](https://travis-ci.org/ewenme/ghibli)
 [![CRAN
 status](http://www.r-pkg.org/badges/version/ghibli)](https://cran.r-project.org/package=ghibli)
 [![DLs](http://cranlogs.r-pkg.org/badges/ghibli)](http://cran.rstudio.com/web/packages/ghibli/index.html)
+[![Travis build
+Status](https://travis-ci.org/ewenme/ghibli.svg)](https://travis-ci.org/ewenme/ghibli)
 
 ## Overview
 
@@ -90,10 +90,15 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
 
 ![](man/figures/README-ggplot2-eg-1.png)<!-- -->
 
-## Credits
+## Other stuff
 
-This package was largely inspired by [Karthik Ram’s `wesanderson`
-package](https://github.com/karthik/wesanderson).
-
-The palettes themselves come from [Movies in
-Color](http://moviesincolor.com/). Go check ’em.
+  - Get citation information for ghibli in R with `citation(package =
+    'ghibli')`
+  - Please note that the ghibli project is released with a [Contributor
+    Code of
+    Conduct](https://ewenme.github.io/ghibli//CODE_OF_CONDUCT.html). By
+    contributing to this project, you agree to abide by its terms.
+  - This package was largely inspired by [Karthik Ram’s `wesanderson`
+    package](https://github.com/karthik/wesanderson)
+  - The palettes themselves come from [Movies in
+    Color](http://moviesincolor.com/). Go check ’em.

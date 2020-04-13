@@ -101,8 +101,9 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   scale_colour_ghibli_d("LaputaMedium", direction = -1)
 ```
 
-## Credits
+## Other stuff
 
-This package was largely inspired by [Karthik Ram's `wesanderson` package](https://github.com/karthik/wesanderson). 
-
-The palettes themselves come from [Movies in Color](http://moviesincolor.com/). Go check 'em.
+- Get citation information for ghibli in R with `citation(package = 'ghibli')`
+- Please note that the ghibli project is released with a [Contributor Code of Conduct](https://ewenme.github.io/ghibli//CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
+- This package was largely inspired by [Karthik Ram's `wesanderson` package](https://github.com/karthik/wesanderson)
+- The palettes themselves come from [Movies in Color](http://moviesincolor.com/). Go check 'em.
