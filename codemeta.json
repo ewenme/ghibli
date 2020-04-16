@@ -14,7 +14,7 @@
   ],
   "issueTracker": "https://github.com/ewenme/ghibli/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.3.2",
+  "version": "0.3.2.9000",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",

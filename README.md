@@ -57,19 +57,11 @@ for easier porting to new libraries.
 
 All colour palettes are stored as `color` objects (courtesy of the
 [prismatic](https://emilhvitfeldt.github.io/prismatic/index.html)
-package) inside `ghibli_palettes` with lovely printing/plotting methods
-to help you preview flavours.
+package) inside `ghibli_palettes` with extremely cute printing (if
+[crayon](https://github.com/r-lib/crayon) is installed) and plotting
+methods to help you preview flavours.
 
-``` r
-plot(ghibli_palettes$MarnieMedium1)
-```
-
-![](man/figures/README-unnamed-chunk-6-1.png)<!-- -->
-
-If [crayon](https://github.com/r-lib/crayon) is installed, the print
-method will be extremely cute.
-
-![](man/figures/print.png)
+![](man/figures/prismatic-print.svg)
 
 ## In the wild
 
