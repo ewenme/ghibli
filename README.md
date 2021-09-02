@@ -5,16 +5,17 @@
 [![CRAN
 status](http://www.r-pkg.org/badges/version/ghibli)](https://cran.r-project.org/package=ghibli)
 [![DLs](http://cranlogs.r-pkg.org/badges/ghibli)](http://cran.rstudio.com/web/packages/ghibli/index.html)
-[![Travis build
-Status](https://travis-ci.org/ewenme/ghibli.svg)](https://travis-ci.org/ewenme/ghibli)
+[![R-CMD-check](https://github.com/ewenme/ghibli/workflows/R-CMD-check/badge.svg)](https://github.com/ewenme/ghibli/actions)
 
 ## Overview
 
 > “No matter how many weapons you have, no matter how great your
-> technology might be, the world cannot live without love\!” —*Castle in
+> technology might be, the world cannot live without love!” —*Castle in
 > the Sky (1986)*
 
 ｡◕‿‿◕｡ Sprinkle some Studio Ghibli palette magic over your plots ｡◕‿‿◕｡
+
+    #> Warning: Package `magick` is required to draw images. Image not drawn.
 
 ![](man/figures/README-unnamed-chunk-2-1.png)<!-- -->
 
@@ -84,13 +85,13 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
 
 ## Other stuff
 
-  - Get citation information for ghibli in R with `citation(package =
-    'ghibli')`
-  - Please note that the ghibli project is released with a [Contributor
+-   Get citation information for ghibli in R with
+    `citation(package = 'ghibli')`
+-   Please note that the ghibli project is released with a [Contributor
     Code of
     Conduct](https://ewenme.github.io/ghibli//CODE_OF_CONDUCT.html). By
     contributing to this project, you agree to abide by its terms.
-  - This package was largely inspired by [Karthik Ram’s `wesanderson`
+-   This package was largely inspired by [Karthik Ram’s `wesanderson`
     package](https://github.com/karthik/wesanderson)
-  - The palettes themselves come from [Movies in
+-   The palettes themselves come from [Movies in
     Color](http://moviesincolor.com/). Go check ’em.
