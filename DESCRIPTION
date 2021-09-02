@@ -24,8 +24,8 @@ Suggests:
     testthat,
     crayon,
     cowplot,
-    codemetar
-URL: https://ewenme.github.io/ghibli/, https://github.com/ewenme/ghibli
+    codemeta
+URL: https://ewenme.github.io/ghibli/
 BugReports: https://github.com/ewenme/ghibli/issues
 RoxygenNote: 7.0.2
 VignetteBuilder: knitr

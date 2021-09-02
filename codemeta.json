@@ -1,27 +1,19 @@
 {
-  "@context": [
-    "https://doi.org/10.5063/schema/codemeta-2.0",
-    "http://schema.org"
-  ],
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "identifier": "ghibli",
   "description": "Colour palettes inspired by Studio Ghibli <https://en.wikipedia.org/wiki/Studio_Ghibli> \n    films, ported to R for your enjoyment.",
   "name": "ghibli: Studio Ghibli Colour Palettes",
-  "codeRepository": "https://github.com/ewenme/ghibli",
-  "relatedLink": [
-    "https://ewenme.github.io/ghibli/",
-    "https://CRAN.R-project.org/package=ghibli"
-  ],
+  "codeRepository": "https://ewenme.github.io/ghibli/",
   "issueTracker": "https://github.com/ewenme/ghibli/issues",
   "license": "https://spdx.org/licenses/MIT",
   "version": "0.3.2.9000",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.6.0",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.6.0 (2019-04-26)",
+  "runtimePlatform": "R version 4.1.1 (2021-08-10)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -49,8 +41,6 @@
       "familyName": "Chirico"
     }
   ],
-  "copyrightHolder": {},
-  "funder": {},
   "maintainer": [
     {
       "@type": "Person",
@@ -147,30 +137,30 @@
     },
     {
       "@type": "SoftwareApplication",
-      "identifier": "codemetar",
-      "name": "codemetar",
+      "identifier": "codemeta",
+      "name": "codemeta",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
         "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
       },
-      "sameAs": "https://CRAN.R-project.org/package=codemetar"
+      "sameAs": "https://CRAN.R-project.org/package=codemeta"
     }
   ],
-  "softwareRequirements": [
-    {
+  "softwareRequirements": {
+    "1": {
       "@type": "SoftwareApplication",
       "identifier": "R",
       "name": "R",
       "version": ">= 2.10"
     },
-    {
+    "2": {
       "@type": "SoftwareApplication",
       "identifier": "grDevices",
       "name": "grDevices"
     },
-    {
+    "3": {
       "@type": "SoftwareApplication",
       "identifier": "prismatic",
       "name": "prismatic",
@@ -181,18 +171,8 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=prismatic"
-    }
-  ],
-  "releaseNotes": "https://github.com/ewenme/ghibli/blob/master/NEWS.md",
-  "readme": "https://github.com/ewenme/ghibli/blob/master/README.md",
-  "contIntegration": "https://travis-ci.org/ewenme/ghibli",
-  "developmentStatus": "https://www.tidyverse.org/lifecycle/#stable",
-  "keywords": [
-    "r",
-    "color-palette",
-    "ggplot2",
-    "ghibli",
-    "rstats",
-    "visualization"
-  ]
+    },
+    "SystemRequirements": null
+  },
+  "fileSize": "3589.952KB"
 }
