@@ -15,8 +15,6 @@ status](http://www.r-pkg.org/badges/version/ghibli)](https://cran.r-project.org/
 
 ｡◕‿‿◕｡ Sprinkle some Studio Ghibli palette magic over your plots ｡◕‿‿◕｡
 
-    #> Warning: Package `magick` is required to draw images. Image not drawn.
-
 ![](man/figures/README-unnamed-chunk-2-1.png)<!-- -->
 
 ## Installation
