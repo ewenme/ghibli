@@ -9,29 +9,8 @@ body, .navbar-inverse {
 h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
   font-family: 'Work Sans Bold', sans-serif;
   font-weight: 700;
-  color:#222324;
 }
 
 pre, code {
   font-family: "Fira Code", Consolas, Inconsolata, monospace;
-}
-
-.label-default {
-  background-color: transparent;
-}
-
-.navbar-inverse {
-  background-color: #AE93BE;
-  border-color: transparent;
-  min-height: 50px;
-}
-
-.navbar-brand {
-    background-image: url(logo.png);
-    background-size: 32px auto;
-    background-repeat: no-repeat;
-    background-position: 15px center;
-    padding: 0 0 0 54px;
-    height: 50px;
-    line-height: 50px;
 }
