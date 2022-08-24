@@ -27,5 +27,5 @@ Suggests:
     codemeta
 URL: https://ewenme.github.io/ghibli/
 BugReports: https://github.com/ewenme/ghibli/issues
-RoxygenNote: 7.0.2
+RoxygenNote: 7.2.1
 VignetteBuilder: knitr

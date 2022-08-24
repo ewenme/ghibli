@@ -2,7 +2,7 @@
 title: "Get started with ghibli"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{get started}
+  %\VignetteIndexEntry{get started with ghibli}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

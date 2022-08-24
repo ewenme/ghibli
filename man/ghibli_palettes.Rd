@@ -4,7 +4,9 @@
 \name{ghibli_palettes}
 \alias{ghibli_palettes}
 \title{Complete list of available ghibli palettes}
-\format{A list of 27 \code{color} objects elements.}
+\format{
+A list of 27 \code{color} objects elements.
+}
 \usage{
 ghibli_palettes
 }
