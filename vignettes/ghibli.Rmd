@@ -2,7 +2,7 @@
 title: "Get started with ghibli"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{get started}
+  %\VignetteIndexEntry{Get started with ghibli}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -37,7 +37,7 @@ Any palette's take your fancy? The next section will show you how to use `ghibli
 
 ## In the wild
 
-Use ghibli palettes with [ggplot2](http://ggplot2.tidyverse.org/index.html) by accessing the relevant `scale_[colour|fill]_ghibli_[c|d]()` functions:
+Use ghibli palettes with [ggplot2](https://ggplot2.tidyverse.org/index.html) by accessing the relevant `scale_[colour|fill]_ghibli_[c|d]()` functions:
 
 ```{r, ggplot-marnie}
 

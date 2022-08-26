@@ -1,17 +1,15 @@
 url: https://ewenme.github.io/ghibli/
 
 template:
-  params:
-    bootswatch: united
+  bootstrap: 5
+  bootswatch: minty
 
-home:
-  strip_header: true
+navbar:
+  bg: light
 
 authors:
   Ewen Henderson:
     href: https://ewen.io
-navbar:
-  type: inverse
 
 reference:
   - title: "ggplot2 helpers"

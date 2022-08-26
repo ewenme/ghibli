@@ -6,16 +6,14 @@
 \alias{ghibli-package}
 \title{ghibli: Studio Ghibli Colour Palettes}
 \description{
-\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-Colour palettes inspired by Studio Ghibli <https://en.wikipedia.org/wiki/Studio_Ghibli> 
-    films, ported to R for your enjoyment.
+Colour palettes inspired by Studio Ghibli \url{https://en.wikipedia.org/wiki/Studio_Ghibli} films, ported to R for your enjoyment.
 }
 \seealso{
 Useful links:
 \itemize{
   \item \url{https://ewenme.github.io/ghibli/}
-  \item \url{https://github.com/ewenme/ghibli}
   \item Report bugs at \url{https://github.com/ewenme/ghibli/issues}
 }
 

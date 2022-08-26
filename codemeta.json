@@ -2,12 +2,12 @@
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "identifier": "ghibli",
-  "description": "Colour palettes inspired by Studio Ghibli <https://en.wikipedia.org/wiki/Studio_Ghibli> \n    films, ported to R for your enjoyment.",
+  "description": "Colour palettes inspired by Studio Ghibli <https://en.wikipedia.org/wiki/Studio_Ghibli> films, ported to R for your enjoyment.",
   "name": "ghibli: Studio Ghibli Colour Palettes",
   "codeRepository": "https://ewenme.github.io/ghibli/",
   "issueTracker": "https://github.com/ewenme/ghibli/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.3.2.9000",
+  "version": "0.3.3.9000",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -174,5 +174,5 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "3589.952KB"
+  "fileSize": "708.55KB"
 }

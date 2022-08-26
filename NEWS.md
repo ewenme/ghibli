@@ -1,3 +1,7 @@
+# ghibli 0.3.3
+
+* apply new HTML5 fixes for CRAN 
+
 # ghibli 0.3.2
 
 * `ghibli_palettes` elements now stored as `color` objects, using the [prismatic](https://emilhvitfeldt.github.io/prismatic/) package.
