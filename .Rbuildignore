@@ -21,3 +21,4 @@ revdep/
 ^CODE_OF_CONDUCT\.md$
 ^\.github$
 ^CRAN-SUBMISSION$
+^pkgdown$
