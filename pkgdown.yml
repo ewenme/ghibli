@@ -1,0 +1,10 @@
+pandoc: 2.14.2
+pkgdown: 2.0.6
+pkgdown_sha: ~
+articles:
+  ghibli: ghibli.html
+last_built: 2022-08-26T14:51Z
+urls:
+  reference: https://ewenme.github.io/ghibli/reference
+  article: https://ewenme.github.io/ghibli/articles
+
