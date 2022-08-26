@@ -7,7 +7,7 @@
   "codeRepository": "https://ewenme.github.io/ghibli/",
   "issueTracker": "https://github.com/ewenme/ghibli/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.3.3",
+  "version": "0.3.3.9000",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -174,5 +174,5 @@
     },
     "SystemRequirements": null
   },
-  "fileSize": "708.544KB"
+  "fileSize": "708.55KB"
 }
