@@ -1,19 +1,14 @@
-context("test-scales")
-
 # Initial setup -----------------------------------------------------------
 
-library(dplyr)
-library(ggplot2)
-
 base_color_plot <- mtcars %>%
-  mutate(cyl = factor(cyl)) %>%
-  ggplot(aes(x=wt, y=mpg)) +
-  geom_point(aes(color=cyl), size=10)
+  dplyr::mutate(cyl = factor(cyl)) %>%
+  ggplot2::ggplot(ggplot2::aes(x=wt, y=mpg)) +
+  ggplot2::geom_point(ggplot2::aes(color=cyl), size=10)
 
 base_fill_plot <- mtcars %>%
-  mutate(cyl = factor(cyl)) %>%
-  ggplot(aes(x=mpg)) +
-  geom_density(aes(fill=cyl))
+  dplyr::mutate(cyl = factor(cyl)) %>%
+  ggplot2::ggplot(ggplot2::aes(x=mpg)) +
+  ggplot2::geom_density(ggplot2::aes(fill=cyl))
 
 
 
@@ -39,7 +34,7 @@ test_that('scale_colour_ghibli_d takes name args',{
 test_that('scale_colour_ghibli_d fails as expected',{
   expect_error(base_color_plot + scale_colour_ghibli_d())
 
-  throws_error(base_color_plot + scale_colour_ghibli_d(name = 'PonyoMedium', direction = 2))
+  expect_error(base_color_plot + scale_colour_ghibli_d(name = 'PonyoMedium', direction = 2))
 })
 
 
@@ -66,5 +61,5 @@ test_that('scale_fill_ghibli_d takes palette args',{
 test_that('scale_fill_ghibli_d fails as expected',{
   expect_error(base_fill_plot + scale_fill_ghibli_d())
 
-  throws_error(base_fill_plot + scale_fill_ghibli_d(name = 'PonyoMedium', direction = 2))
+  expect_error(base_fill_plot + scale_fill_ghibli_d(name = 'PonyoMedium', direction = 2))
 })
