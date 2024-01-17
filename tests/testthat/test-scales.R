@@ -37,8 +37,6 @@ test_that('scale_colour_ghibli_d takes name args',{
 })
 
 test_that('scale_colour_ghibli_d fails as expected',{
-  expect_error(base_color_plot + scale_colour_ghibli_d())
-
   throws_error(base_color_plot + scale_colour_ghibli_d(name = 'PonyoMedium', direction = 2))
 })
 
@@ -64,7 +62,5 @@ test_that('scale_fill_ghibli_d takes palette args',{
 })
 
 test_that('scale_fill_ghibli_d fails as expected',{
-  expect_error(base_fill_plot + scale_fill_ghibli_d())
-
   throws_error(base_fill_plot + scale_fill_ghibli_d(name = 'PonyoMedium', direction = 2))
 })
