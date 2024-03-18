@@ -1,3 +1,8 @@
+# ghibli 0.3.4
+
+* remove failing tests due to incoming ggplot2 version (3.5.0)
+* use testthat 3rd edition
+
 # ghibli 0.3.3
 
 * apply new HTML5 fixes for CRAN 
