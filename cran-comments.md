@@ -1,9 +1,4 @@
-In this release, I've added some nicer plot/print methods for the included colour palettes.
-
-## Test environments
-* local R installation, R 3.6.0
-* ubuntu 16.04 (on travis-ci), R 3.6.0
-* win-builder (devel)
+In this release, I've removed failing tests owing to the latest (3.5.0) ggplot2 update.
 
 ## R CMD check results
 
