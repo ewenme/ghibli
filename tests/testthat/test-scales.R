@@ -1,19 +1,14 @@
-context("test-scales")
-
 # Initial setup -----------------------------------------------------------
 
-library(dplyr)
-library(ggplot2)
-
 base_color_plot <- mtcars %>%
-  mutate(cyl = factor(cyl)) %>%
-  ggplot(aes(x=wt, y=mpg)) +
-  geom_point(aes(color=cyl), size=10)
+  dplyr::mutate(cyl = factor(cyl)) %>%
+  ggplot2::ggplot(ggplot2::aes(x=wt, y=mpg)) +
+  ggplot2::geom_point(ggplot2::aes(color=cyl), size=10)
 
 base_fill_plot <- mtcars %>%
-  mutate(cyl = factor(cyl)) %>%
-  ggplot(aes(x=mpg)) +
-  geom_density(aes(fill=cyl))
+  dplyr::mutate(cyl = factor(cyl)) %>%
+  ggplot2::ggplot(ggplot2::aes(x=mpg)) +
+  ggplot2::geom_density(ggplot2::aes(fill=cyl))
 
 
 
